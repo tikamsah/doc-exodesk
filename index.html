@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; chaModaet=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ExoDesk - Your Smart & Scalable Help Desk Solution</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar bg-body-tertiary fixed-top" id="header-container">
+    <div class="container">
+        <div class="w-100 d-flex align-items-center justify-content-between">
+            <a href="assets/img/logo.svg" target="_blank" class="navbar-brand d-flex align-items-center">
+                <img class="nav-logo" src="assets/img/logo.svg" alt="">
+            </a>
+            <ul class="nav d-flex align-items-center">
+                <li><a href="https://pospro.acnoo.com/" target="_blank">Live Demos</a></li>
+                <li><a href="https://codecanyon.net/user/acnoo/portfolio" target="_blank">PURCHASE $29</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="masthead">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mb-0">ExoDesk - Your Smart & Scalable Help Desk Solution</h1>
+                <p>This document contains general information and step by step guidelines<br> on how to install on your Local/Live server Admin Panel</p>
+                <span class="cta-button"><a href="index.html#getting-started">Get started</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--main-->
+<div id="mainContent" class="container">
+    <div class="row">
+        <div class="col-md-3" id="leftCol">
+            <div id="sidebar">
+                <div class="accordion accordion-flush" id="sidebarAccordion">
+                
+                    <div class="accordion-item">
+                        <a href="index.html" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chatGPT-admin-panel" aria-expanded="false" aria-controls="chatGPT-admin-panel">Admin Panel</a>
+                        <div id="chatGPT-admin-panel" class="accordion-collapse collapse show" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="sidebarMenuAccordion">
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#getting-started" class="active accordion-button" type="button">Getting started</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#requirements" class="accordion-button" type="button">Requirements</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#download" class="accordion-button" type="button">Download from Envato</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#database" class="accordion-button" type="button">Creating Database</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#upload" class="accordion-button" type="button">Uploading Files</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#install" class="accordion-button" type="button">Installation Wizard</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#password" class="accordion-button" type="button">Default Password</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-dashboard" class="accordion-button" type="button">Dashboard</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-advertising" class="accordion-button" type="button">Advertising</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-business" class="accordion-button" type="button">Business List</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-business-category" class="accordion-button" type="button">Business Category</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-plan" class="accordion-button" type="button">Subscription Plans</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-staff" class="accordion-button" type="button">Staff Management</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-report" class="accordion-button" type="button">Reports</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-message" class="accordion-button" type="button">Messages</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-cms-manage" class="accordion-button" type="button">CMS Manage</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-permission" class="accordion-button" type="button">Roles & Permissions</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#super-setting" class="accordion-button" type="button">Settings</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#cpanel-smtp-setup" class="accordion-button" type="button">Cpanel SMTP Setup</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#hpanel-smtp-setup" class="accordion-button" type="button">hPanel SMTP Setup</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#gmail-smtp-setup" class="accordion-button" type="button">Gmail SMTP Setup</a>
+                                    </div>
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#change-logs" class="accordion-button" type="button">Change Logs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <a href="index.html" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#support" aria-expanded="false" aria-controls="support">Help & Support</a>
+                        <div id="support" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush" id="sidebarMenuAccordion">
+                                    <div class="accordion-item remove-show-class">
+                                        <a href="index.html#help-support" class="accordion-button" type="button">Help & Support</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/left-->
+
+        <!--right-->
+        <div class="col-md-9">
+            <div class="ContentWrapper">
+                <section id="getting-started">
+                    <h1>Getting Started</h1>
+                    <h3>ExoDesk - Your Smart & Scalable Help Desk Solution</h3>
+                    <hr class="my-0">
+                    <ul>
+                        <li>Uploaded Date: 11-July-2025</li>
+                        <li>Project: ExoDesk</li>
+                        <li>Author: Nepexo Team</li>
+                        <li>Email: <a href="mailto:nepexo@gmail.com">nepexo@gmail.com</a></li>
+                    </ul>
+                    <p class="important">Thank you for purchasing our product. If you have any questions that are beyond the scope of this documentation file, please feel free to email us via our user page contact form or directly to email at <a href="mailto:nepexo@gmail.com">nepexo@gmail.com</a>
+                    </p>
+                </section>
+
+                <div class="theme-requirements">
+                    <section id="requirements">
+                        <div class="page-header">
+                            <h3 class="mb-0">Requirements</h3>
+                        </div>
+                        <div>We are using <b>laravel 11</b> So these are the minimum server requirements, the installer
+                            will check if your server meets these or alternatively you can contact your hosting provider
+                            in order to make sure your server meets them.
+                        </div>
+                        <br>
+                        <ul>
+                            <li>PHP >= 8.2</li>
+                            <li>Ctype PHP Extension</li>
+                            <li>cURL PHP Extension</li>
+                            <li>DOM PHP Extension</li>
+                            <li>Fileinfo PHP Extension</li>
+                            <li>Filter PHP Extension</li>
+                            <li>Hash PHP Extension</li>
+                            <li>Mbstring PHP Extension</li>
+                            <li>OpenSSL PHP Extension</li>
+                            <li>PCRE PHP Extension</li>
+                            <li>PDO PHP Extension</li>
+                            <li>Session PHP Extension</li>
+                            <li>Tokenizer PHP Extension</li>
+                            <li>XML PHP Extension</li>
+                        </ul>
+
+                        <p class="info">For more information about deployment see the Laravel documentation here <a
+                                href="https://laravel.com/docs/11.x/deployment">https://laravel.com/docs/10.x/deployment</a>
+                        </p>
+                        <p> &nbsp;</p>
+                    </section>
+
+                    <section id="download">
+                        <div class="page-header">
+                            <h3 class="m-0">Download Project from Envato</h3>
+                        </div>
+                        <p class="m-0">After successfully purchase POSpro download the project from <a
+                                href="https://codecanyon.net/downloads">Envato download page</a></p>
+
+                        <a href="assets/img/download.png" target="_blank">
+                            <img src="assets/img/download.png" class="border">
+                        </a>
+
+                        <p>Extract the downloaded file. You will have another zip file named <em>Super-Admin.zip</em>
+                            containing the main project's files and a documentation folder. You are reading this
+                            documentation, that means you already have theme both.</p>
+                    </section>
+
+                    <section id="database">
+                        <div class="page-header"><h3>Creating Database</h3></div>
+                        <p>Before installing, you will need to create a new database. If you already know how to do this
+                            or have already created one, skip to the next step.</p>
+                        <p class="important"><b>Note: </b> Please use empty database. In most cases you should be able
+                            to create a database from your cpanel.</p>
+
+                        <p>Login to your cPanel by entering this in your browser url</p>
+                        <p class="important">yourdomian.com/cpanel</p>
+
+                        <a href="assets/img/cpanel_login.png" target="_blank">
+                            <img src="assets/img/cpanel_login.png" alt="" class="border">
+                        </a>
+                        <h5>Step: 1</h5>
+                        <a href="assets/img/create-database.png" target="_blank">
+                            <img src="assets/img/create-database.png" alt="" class="border">
+                        </a>
+                        <h5>Step: 2</h5>
+                        <a href="assets/img/create-new-db.jpg" target="_blank">
+                            <img src="assets/img/create-new-db.jpg" alt="" class="border">
+                        </a>
+                        <h5>Step: 3</h5>
+                        <p>Now you need to create a new user. On the same page go to create a new database user</p>
+                        <a href="assets/img/create-user.png" target="_blank">
+                            <img src="assets/img/create-user.png" alt="" class="border">
+                        </a>
+                        <h5>Step: 4</h5>
+                        <p>Now add the user to the database</p>
+                        <a href="assets/img/db-user.jpg" target="_blank">
+                            <img src="assets/img/db-user.jpg" alt="" class="border">
+                        </a>
+                        <h5>Step: 5</h5>
+                        <p>And select full permissions on the database to that user</p>
+                        <a href="assets/img/all-permissions.jpg" target="_blank">
+                            <img src="assets/img/all-permissions.jpg" alt="" class="border">
+                        </a>
+                    </section>
+
+                    <section id="upload">
+                        <div class="page-header"><h3>Uploading Files</h3></div>
+
+                        <p class="important">On some operating systems, the dotfiles are hidden by default. Before
+                            starting to upload the files, please make sure your file explorer has the option to view
+                            hidden files turned on.</p>
+
+                        <p>After creating a database, Upload the <b>Super-Admin.zip</b> file on the web root folder of
+                            your domain. This folder is generally called public_html, html, or example.com, but
+                            depending on your server's configuration, it might be named differently.</p>
+
+                        <a href="assets/img/file-manager.png" target="_blank">
+                            <img src="assets/img/file-manager.png" alt="" class="border">
+                        </a>
+                        <a href="assets/img/public-html.png" target="_blank">
+                            <img src="assets/img/public-html.png" alt="" class="border">
+                        </a>
+                        <p>After that in the public_html directory upload the downloaded file.</p>
+                        <a href="assets/img/upload3.png" target="_blank">
+                            <img src="assets/img/upload3.png" alt="" class="border">
+                        </a>
+                        <a href="assets/img/upload4.png" target="_blank">
+                            <img src="assets/img/upload4.png" alt="" class="border">
+                        </a>
+
+                        <p class="important"><b>Note: </b> Important Make sure that you have .env file in your folder.
+                        </p>
+
+                        <p class="important"><b>Note: </b> Make sure that .htaccess file got copied properly from the
+                            download to your server. </p>
+                    </section>
+
+                    <section id="install">
+                        <div class="page-header">
+                            <h3>Installation Wizard</h3>
+                        </div>
+                        <div>
+                            <p>Go to your website address, then you'll see an installation wizard. To open the
+                                installer. Visit</p>
+                        </div>
+                        <p class="important">yourdomain.com/install</p>
+                        <p>Now the installer will show up.The First screen will be Welcome Screen</p>
+                        <a href="assets/img/installer.png" target="_blank">
+                            <img src="assets/img/installer.png" alt="" width="448" class="border">
+                        </a>
+
+                        <p class="warning">Note : If you are not able to access the website by accessing
+                            yourdomain.com/install, but
+                            you are able to access it via yourdomain.com/index.php/install, this means that you probably
+                            don't have
+                            Apache mod_rewrite installed and enabled. </p>
+
+                        <h3>Server Requirements</h3>
+                        <p>After clicking on "Check requirement" button, you will be redirected to System Requirements
+                            step during
+                            the installation wizard, System Requirements.</p>
+                        <a href="assets/img/requirements-check.png" target="_blank">
+                            <img src="assets/img/requirements-check.png" alt="" width="443" class="border">
+                        </a>
+                        <h3>Directory Permissions</h3>
+
+                        <p>After successfully enabling and installing all required PHP extensions, next step is to set
+                            the
+                            appropriate permissions for some system folders that shows on below picture.</p>
+
+                        <p class="info">For giving permissions please open your terminal window. and type command <code>sudo
+                            chmod
+                            777 directory_name</code> for example <code>sudo chmod 777 app</code></p>
+                        <a href="assets/img/permissions1.png" target="_blank">
+                            <img src="assets/img/permissions1.png" alt="" width="448" class="border">
+                        </a>
+
+                        <p>Note : If your control panel has no terminal window, then go to public_html
+                            or the directory where you have uploaded the project.
+                            now give permission for some system folders that show on Installer.
+                            For example, we have demonstrated storage/framework directory permission in the below
+                            image.</p>
+
+                        <span class="mb-0">Open required directory</span>
+                        <a href="assets/img/permissions2.png" target="_blank">
+                            <img src="assets/img/permissions2.png" alt="" class="border">
+                        </a>
+                        <span>Change permissions for specific directory</span>
+                        <a href="assets/img/permissions3.png" target="_blank">
+                            <img src="assets/img/permissions3.png" alt="" class="border">
+                        </a>
+
+                        <p class="important">
+                            Note: You have to change the directory permissions for the <code>storage/logs</code> and <code>bootstrap/cache</code> folders as shown in the image. If these folders do not have the correct permissions, please adjust them accordingly.
+                        </p>
+
+                        <h3>Database/Environment Setting</h3>
+
+                        <p>You have to fill in your database credentials</p>
+                        <a href="assets/img/db-config.png" target="_blank">
+                            <img src="assets/img/db-config.png" alt="" width="447" class="border">
+                        </a>
+
+                        <h3>Exit</h3>
+
+                        <p>The last step is exit step.</p>
+                        <a href="assets/img/save-db.png" target="_blank">
+                            <img src="assets/img/save-db.png" alt="" width="445" class="border">
+                        </a>
+                        <a href="assets/img/install.png" target="_blank">
+                            <img src="assets/img/install.png" alt="" width="445" class="border">
+                        </a>
+                        <a href="assets/img/success.png" target="_blank">
+                            <img src="assets/img/success.png" alt="" width="445" class="border">
+                        </a>
+                        <p class="important">Congratulations you have successfully installed this project on your
+                            server. 😀</p>
+                        <p> &nbsp;</p>
+                    </section>
+
+                    <section id="password">
+                        <div class="page-header">
+                            <h3>Default Password</h3>
+                        </div>
+                        <p>You can login using several methods depending on your role.</p>
+
+                        <h3>Super Admin</h3>
+                        <p class="mb-0">superadmin@superadmin.com</p>
+                        <p class="mb-0">superadmin</p>
+
+                        <h3 class="mt-3">Admin</h3>
+                        <p class="mb-0">admin@admin.com</p>
+                        <p class="mb-0">admin</p>
+
+                        <h3 class="mt-3">Manager</h3>
+                        <p class="mb-0">manager@manager.com</p>
+                        <p class="mb-0">manager</p>
+
+                        <!--Should be changed-->
+                        <a href="assets/img/login.png" target="_blank">
+                            <img src="assets/img/login.png" class="border">
+                        </a>
+                        <p class="mt-2">In this project, different modules are assigned based on user roles: Super Admin, Admin, Manager. Each role has distinct responsibilities tailored to their specific tasks and
+                            permissions. Below, we will discuss how each user role operates within the system.</p>
+                    </section>
+                </div>
+
+                <section id="super-dashboard">
+                    <div class="page-header">
+                        <h3 class="mt-4">Dashboard</h3>
+                    </div>
+                    <p class="m-0">This is the admin dashboard page. The essential information regarding the project are displayed here.</p>
+                    <a href="assets/img/super_dashboard.png" target="_blank">
+                        <img src="assets/img/super_dashboard.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-advertising">
+                    <div class="page-header">
+                        <h3 class="m-0">Advertising Section</h3>
+                    </div>
+                    <p class="m-0">This list allows you to see the current advertising campaigns with status. To create a new advertise, you can click on the "Create Banner" button at the top right of the screenshot. A pop-up window will open, where you can add an image and change the status.</p>
+                    <a href="assets/img/add.png" target="_blank">
+                        <img src="assets/img/add.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-business">
+                    <h3>Business List</h3>
+                    <p class="m-0">This appears to be a screenshot of a business list page. Business list functionalities typically allow users to collect and organize information about businesses. By clicking the "View" button, you can see the details of each business. You can also create a new business by clicking the "Add New Business" button. Below, we'll describe how you can create a new business.</p>
+                    <a href="assets/img/upgrade_plan.png" target="_blank">
+                        <img src="assets/img/upgrade_plan.png" class="border">
+                    </a>
+                    <h3>Upgrade Plan</h3>
+                    <p class="m-0">If you need to upgrade the plan for any business, click on the "Upgrade Plan" button. You will likely see a popup for this. Here, you can update the plan, gateway, price, and notes. When you select a plan, the price input field will automatically fill in according to the selected plan, but you can also change the price manually. If desired, you can add a note by filling in the notes input field.</p>
+                    <a href="assets/img/upgrade_plan_1.png" target="_blank">
+                        <img src="assets/img/upgrade_plan_1.png" class="border">
+                    </a>
+
+                    <h3>Create Business</h3>
+                    <p class="m-0">By clicking on the "Add New Business" button, you can create a new business. You will need to fill in the necessary fields. Here is the screenshot of the create business page.</p>
+                    <a href="assets/img/create_business.png" target="_blank">
+                        <img src="assets/img/create_business.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-business-category">
+                    <div class="page-header">
+                        <h3 class="m-0">Business Category List</h3>
+                    </div>
+                    <p class="m-0">This appears to be a screenshot of a business categories list. Here, you can filter business categories, as well as edit, delete, or multi-delete them. There is also an "Add New" button for adding new business categories. To add a new business category, fill in the necessary fields. You need to enter the business name, and the description field is optional. You can also update the status from this page.</p>
+                    <a href="assets/img/business_category.png" target="_blank">
+                        <img src="assets/img/business_category.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-plan">
+                    <div class="page-header">
+                        <h3 class="m-0">Plan List</h3>
+                    </div>
+                    <p class="m-0">Here, you can view a list of available plans with filtering options. You can also change the plan status from this page. Additionally, options to view, edit, delete, and multi-delete plans are available.</p>
+                    <a href="assets/img/manage_plans.png" target="_blank">
+                        <img src="assets/img/manage_plans.png" class="border">
+                    </a>
+                    <h3>Create Plan</h3>
+                    <p class="m-0">Here, you have the option to create a plan according to your preferences. You can also add multiple features using the "Add New Feature" input field. Once you have completed filling out the form, simply click the "Save" button.</p>
+                    <a href="assets/img/create_plans.png" target="_blank">
+                        <img src="assets/img/create_plans.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-staff">
+                    <div class="page-header">
+                        <h3 class="m-0">Staff List</h3>
+                    </div>
+                    <p class="m-0">Here, you can view the list of staff members along with a search filter. Additionally, you have the option to edit, delete individual entries, and perform multi-delete operations.</p>
+                    <a href="assets/img/staff_list.png" target="_blank">
+                        <img src="assets/img/staff_list.png" class="border">
+                    </a>
+                    <h3>Create Staff</h3>
+                    <p class="m-0">You can create a staff member here by completing the necessary fields.</p>
+                    <a href="assets/img/create_staff.png" target="_blank">
+                        <img src="assets/img/create_staff.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-report">
+                    <div class="page-header">
+                        <h3 class="m-0">Subscription Report</h3>
+                    </div>
+                    <p class="m-0">The Subscription reports section allows users to track their current subscriptions.In the action column, clicking on the three dots (...) will display options to mark as "Paid" or "Reject." Clicking either option will allow you to change the status accordingly.</p>
+                    <a href="assets/img/subscription_reports.png" target="_blank">
+                        <img src="assets/img/subscription_reports.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-message">
+                    <div class="page-header">
+                        <h3 class="m-0">Message List</h3>
+                    </div>
+                    <p class="m-0">Here you can view messages sent to users from the website. You can filter messages and use options to delete or delete multiple messages simultaneously.</p>
+                    <a href="assets/img/message_list.png" target="_blank">
+                        <img src="assets/img/message_list.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-cms-manage">
+                    <div class="page-header">
+                        <h3 class="m-0">CMS Manage</h3>
+                    </div>
+                    <p class="m-0">Here you have the ability to perform various actions including handling Pages, Terms & Condition, Privacy & Policy, FAQs, Testimonials, Features, Interface and Manage Blogs.</p>
+                    <h3 class="mt-2">Manage Pages</h3>
+                    <p class="m-0">You can modify various sections of the pages, including the slider,header,features, interface, watch, testimonial, blog, about us contuct us, pricing, footer, socila media.</p>
+                    <a href="assets/img/slider.png" target="_blank">
+                        <img src="assets/img/slider.png" class="border">
+                    </a>
+                    <p class="m-0">You can update the header "button" and its link of your landing page.</p>
+                    <a href="assets/img/header.png" target="_blank">
+                        <img src="assets/img/header.png" class="border">
+                    </a>
+                    <p class="m-0">Here, you can update the feature title of the Home page.</p>
+                    <a href="assets/img/feature.png" target="_blank">
+                        <img src="assets/img/feature.png" class="border">
+                    </a>
+                    <p class="m-0">Here, you can update the interface title and description of the Home Page.</p>
+                    <a href="assets/img/interface.png" target="_blank">
+                        <img src="assets/img/interface.png" class="border">
+                    </a>
+                    <p class="m-0">You can add this section to the Home page by filling out the required information.</p>
+                    <a href="assets/img/watch.png" target="_blank">
+                        <img src="assets/img/watch.png" class="border">
+                    </a>
+                    <p class="m-0">Here, you can update the testimonial section's title of the Home page.</p>
+                    <a href="assets/img/testimonial.png" target="_blank">
+                        <img src="assets/img/testimonial.png" class="border">
+                    </a>
+                    <p class="m-0">Here, you can update some information of your Blog page.</p>
+                    <a href="assets/img/blog.png" target="_blank">
+                        <img src="assets/img/blog.png" class="border">
+                    </a>
+                    <p class="m-0">Here, you can update information of your About us page.</p>
+                    <a href="assets/img/about_us.png" target="_blank">
+                        <img src="assets/img/about_us.png" class="border">
+                    </a>
+                    <a href="assets/img/about_us_1.png" target="_blank">
+                        <img src="assets/img/about_us_1.png" class="border">
+                    </a>
+
+                    <p class="m-0">You can update your term and condition "title" in this section.</p>
+                    <a href="assets/img/pages_term_condition.png" target="_blank">
+                        <img src="assets/img/pages_term_condition.png" class="border">
+                    </a>
+                    <p class="m-0">You can update your privacy and policy "title" in this section.</p>
+                    <a href="assets/img/pages_privacy_policy.png" target="_blank">
+                        <img src="assets/img/pages_privacy_policy.png" class="border">
+                    </a>
+                    <p class="m-0">You can update your contact us pages's title, button, description in this section.</p>
+                    <a href="assets/img/pages_contuct_us.png" target="_blank">
+                        <img src="assets/img/pages_contuct_us.png" class="border">
+                    </a>
+                    <p class="m-0">You can update your Pricing page's title, button, description in this section.</p>
+                    <a href="assets/img/pages_pricing.png" target="_blank">
+                        <img src="assets/img/pages_pricing.png" class="border">
+                    </a>
+                    <p class="m-0">Here, you can view all parts of the footer section of the landing page. You can update them according to your needs.</p>
+                    <a href="assets/img/footer.png" target="_blank">
+                        <img src="assets/img/footer.png" class="border">
+                    </a>
+                    <a href="assets/img/right_footer.png" target="_blank">
+                        <img src="assets/img/right_footer.png" class="border">
+                    </a>
+                    <a href="assets/img/middle_footer.png" target="_blank">
+                        <img src="assets/img/middle_footer.png" class="border">
+                    </a>
+                    <a href="assets/img/left_footer.png" target="_blank">
+                        <img src="assets/img/left_footer.png" class="border">
+                    </a>
+                    <p class="m-0">You can update social icon for footer section of landing page according to your needs.</p>
+                    <a href="assets/img/social_footer.png" target="_blank">
+                        <img src="assets/img/social_footer.png" class="border">
+                    </a>
+                    <div class="page-header">
+                        <h3 class="m-0">Term & Condition</h3>
+                    </div>
+                    <p class="m-0">Here are the updated terms and conditions for your software.</p>
+                    <a href="assets/img/term_condition.png" target="_blank">
+                        <img src="assets/img/term_condition.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Privacy & Policy</h3>
+                    </div>
+                    <p class="m-0">We need a privacy policy for our software. You can update the policy in this section.</p>
+                    <a href="assets/img/privacy_policy.png" target="_blank">
+                        <img src="assets/img/privacy_policy.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Testimonial List</h3>
+                    </div>
+                    <p class="m-0">Here, you have the option to view the testimonial list with update and delete options available. Search and multi-delete options are also provided. After clicking the "Create New" button, you will be taken to a new page where you can add a testimonial by filling in the necessary fields.Here, you can provide the client's name, their workplace, the review, and select a star rating from the existing list. You can also add an image.</p>
+                    <a href="assets/img/testimonial_list.png" target="_blank">
+                        <img src="assets/img/testimonial_list.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Features List</h3>
+                    </div>
+                    <p class="m-0">The features section appears to be a list of features in a software application.Users can add new features by clicking the "Create New" Feature button.The Action column may allow users to perform actions on features, such as "editing" or "deleting" them.</p>
+                    <a href="assets/img/features_list.png" target="_blank">
+                        <img src="assets/img/features_list.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Create Feature</h3>
+                    </div>
+                    <p class="m-0">Here you can see some fields, such as 'Title,' 'Status,' and others, for creating new features.</p>
+                    <a href="assets/img/create_features.png" target="_blank">
+                        <img src="assets/img/create_features.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Interface List</h3>
+                    </div>
+                    <p class="m-0">Here, you can view the Interfaces List with filtering options. You can change the status for each interface, as well as edit, delete, or multi-delete them.</p>
+                    <a href="assets/img/interface_list.png" target="_blank">
+                        <img src="assets/img/interface_list.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Create Interface</h3>
+                    </div>
+                    <p class="m-0">Use images to create a visual representation of the interface within the landing page. </p>
+                    <a href="assets/img/create_interface.png" target="_blank">
+                        <img src="assets/img/create_interface.png" class="border">
+                    </a>
+
+                    <div class="page-header">
+                        <h3 class="m-0">Create Testimonial</h3>
+                    </div>
+                    <p class="m-0">Here you create Testimonial to fill required field.</p>
+                    <a href="assets/img/create_testimonial.png" target="_blank">
+                        <img src="assets/img/create_testimonial.png" class="border">
+                    </a>
+                    <div class="page-header">
+                        <h3 class="m-0">Blog List</h3>
+                    </div>
+                    <p class="m-0">Here you have the option to view the blog and comment lists. Additionally, editing and updating options are available. You can also search for specific items, and multi-delete functionality is also provided.</p>
+                    <a href="assets/img/blog_list.png" target="_blank">
+                        <img src="assets/img/blog_list.png" class="border">
+                    </a>
+                    <div class="page-header">
+                        <h3 class="m-0">Create Blog</h3>
+                    </div>
+                    <p class="m-0">Feel free to utilize this platform to generate a blog post and complete the necessary fields. As you input your content, you'll notice the inclusion of multiple tags. Additionally, you can craft meta titles and meta descriptions for enhanced SEO purposes.</p>
+                    <a href="assets/img/create_blog.png" target="_blank">
+                        <img src="assets/img/create_blog.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-permission">
+                    <div class="page-header">
+                        <h3 class="m-0">Roles & Permissions</h3>
+                    </div>
+                    <p class="mb-3">In this section, you have the ability to define roles and allocate specific permissions to different users as needed.</p>
+                    <h3>Roles</h3>
+                    <p>In this section, you have the capability to create new roles and update existing ones. When updating roles, you can configure their specific role permissions, granting or restricting access to various features and functionalities as required. This allows you to tailor user roles to your organizational needs and security requirements.</p>
+                    <a href="assets/img/roles_1.png" target="_blank">
+                        <img src="assets/img/roles_1.png" class="border">
+                    </a>
+                    <a href="assets/img/roles_2.png" target="_blank">
+                        <img src="assets/img/roles_2.png" class="border">
+                    </a>
+                    <h3>Permissions</h3>
+                    <p>In this section, you have the capability to set role-specific permissions, allowing you to fine-tune and control access rights for each role according to your organization's needs and security requirements.</p>
+                    <a href="assets/img/permission.png" target="_blank">
+                        <img src="assets/img/permission.png" class="border">
+                    </a>
+                </section>
+
+                <hr class="mt-4">
+                <section id="super-setting">
+                    <div class="page-header">
+                        <h3 class="">Setting</h3>
+                    </div>
+                    <p class="m-0">In the Setting section, you have the capability to configure the fundamental aspects or core elements of this project.</p>
+                    <h3 class="mt-2">Currency list</h3>
+                    <p class="m-0">Here, you can view a list of currencies with filtering options. Additionally, there is an option to edit currencies, and you can also set a default currency.</p>
+                    <a href="assets/img/currency_list.png" target="_blank">
+                        <img src="assets/img/currency_list.png" class="border">
+                    </a>
+                    <h3 class="mt-2">Create Currency</h3>
+                    <p class="m-0">You have the option to include currency from this location.</p>
+                    <a href="assets/img/create_currency.png" target="_blank">
+                        <img src="assets/img/create_currency.png" class="border">
+                    </a>
+                    <h3>Notification</h3>
+                    <p class="m-0">Here, you can view a list of various notifications. You also have the option to filter these notifications based on available criteria.In each list, clicking the "View" button allows you to see detailed information.</p>
+                    <a href="assets/img/notification_setting.png" target="_blank">
+                        <img src="assets/img/notification_setting.png" class="border">
+                    </a>
+                    <h3>Payment Gateway Settings</h3>
+                    <p class="m-0">Here, you can modify various payment gateways like Stripe, PayPal, SSLCommerz, manual and many others options.</p>
+                    <h3>Stripe</h3>
+                    <a href="assets/img/stripe.png" target="_blank">
+                        <img src="assets/img/stripe.png" class="border">
+                    </a>
+                    <h3>Mobile</h3>
+                    <a href="assets/img/mobile.png" target="_blank">
+                        <img src="assets/img/mobile.png" class="border">
+                    </a>
+                    <h3>Paypal</h3>
+                    <a href="assets/img/paypal.png" target="_blank">
+                        <img src="assets/img/paypal.png" class="border">
+                    </a>
+                    <h3>Paystack</h3>
+                    <a href="assets/img/paystack.png" target="_blank">
+                        <img src="assets/img/paystack.png" class="border">
+                    </a>
+                    <h3>Razorpay</h3>
+                    <a href="assets/img/razorpay.png" target="_blank">
+                        <img src="assets/img/razorpay.png" class="border">
+                    </a>
+                    <h3>Instamojo</h3>
+                    <a href="assets/img/instamojo.png" target="_blank">
+                        <img src="assets/img/instamojo.png" class="border">
+                    </a>
+                    <h3>Toyyibpay</h3>
+                    <a href="assets/img/toyyibpay.png" target="_blank">
+                        <img src="assets/img/toyyibpay.png" class="border">
+                    </a>
+                    <h3>Flutter Wave</h3>
+                    <a href="assets/img/flutter_wave.png" target="_blank">
+                        <img src="assets/img/flutter_wave.png" class="border">
+                    </a>
+                    <h3>Thawani</h3>
+                    <a href="assets/img/thawani.png" target="_blank">
+                        <img src="assets/img/thawani.png" class="border">
+                    </a>
+                    <h3>Mercadopago</h3>
+                    <a href="assets/img/mercadopago.png" target="_blank">
+                        <img src="assets/img/mercadopago.png" class="border">
+                    </a>
+                    <h3>Phonepe</h3>
+                    <a href="assets/img/phonepe.png" target="_blank">
+                        <img src="assets/img/phonepe.png" class="border">
+                    </a>
+                    <h3>Paytm</h3>
+                    <a href="assets/img/paytm.png" target="_blank">
+                        <img src="assets/img/paytm.png" class="border">
+                    </a>
+                    <h3>Sslcommerz</h3>
+                    <a href="assets/img/sslecomerce.png" target="_blank">
+                        <img src="assets/img/sslecomerce.png" class="border">
+                    </a>
+                    <h3>Manual</h3>
+                    <a href="assets/img/manual.png" target="_blank">
+                        <img src="assets/img/manual.png" class="border">
+                    </a>
+                    <h3>System Settings</h3>
+                    <p class="m-0">In this section, you can configure various backend settings for the project, including application setup, driver configurations, mail settings, storage configurations, and other essential components. It's crucial to handle these configurations with care as they impact the functionality and security of the system.</p>
+                    <h3>App</h3>
+                    <a href="assets/img/app_setting.png" target="_blank">
+                        <img src="assets/img/app_setting.png" class="border">
+                    </a>
+                    <h3>Drivers</h3>
+                    <a href="assets/img/driver.png" target="_blank">
+                        <img src="assets/img/driver.png" class="border">
+                    </a>
+                    <h3>Drivers</h3>
+                    <a href="assets/img/driver.png" target="_blank">
+                        <img src="assets/img/driver.png" class="border">
+                    </a>
+                    <h3>Storage Settings</h3>
+                    <a href="assets/img/storage.png" target="_blank">
+                        <img src="assets/img/storage.png" class="border">
+                    </a>
+                    <h3 id="cpanel-smtp-setup">Mail Configuration / SMTP Setup</h3>
+                    <h2>Cpanel</h2>
+                    <h4>To create and configure an SMTP email account using cPanel, follow below steps:</h4>
+                    <h4>Step 1: Log in to cPanel</h4>
+                    <h4>Step 2: Create an Email Account</h4>
+                    <p>1. In cPanel, go to "Email Accounts".</p>
+                    <p>2. Click “Create”.</p>
+                    <p>3. Fill in:</p>
+                    <p>&nbsp;&nbsp;&nbsp; a. Username: e.g., info, test, or hr</p>
+                    <p>&nbsp;&nbsp;&nbsp; b. Domain: Select the correct domain (if multiple are available)</p>
+                    <p>&nbsp;&nbsp;&nbsp; c. Password: Set a strong password or use the generator</p>
+                    <p>4. Click Create.</p>
+                    <p class="important">📌 This creates an email like test@yourdomain.com</p>
+                    <h4>Step 3: Get SMTP Settings</h4>
+                    <p>Once the email is created:</p>
+                    <p><b>1.</b> Go to "Email Accounts" again.</p>
+                    <p><b>2.</b> Find your new email and click “Connect Devices”.</p>
+                    <p><b>3.</b> You’ll see the SMTP settings under the Mail Client Manual Settings section like below image:</p>
+                    <a href="assets/img/smtp-cpanel.png" target="_blank">
+                        <img src="assets/img/smtp-cpanel.png" class="border">
+                    </a>
+
+                    <h4>Example: </h4>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>Input</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>QUEUE_MAIL</td>
+                            <td>Select true / false, (If you select true, you need to run the following command: <b>php artisan queue:work</b> on server)</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_DRIVER_TYPE</td>
+                            <td>Select MAIL MAILER / MAIL DRIVER</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_DRIVER</td>
+                            <td>
+                                Use <b>sendmail</b> if your server has a local mail server installed (like Postfix or Exim).
+                                <br>
+                                Use <b>smtp</b> when sending emails through an external mail service (like Gmail, Mailgun, or your hosting provider's SMTP server).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_HOST</td>
+                            <td>mail.yourdomain.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_PORT</td>
+                            <td>587</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_USERNAME</td>
+                            <td>test@yourdomain.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_PASSWORD</td>
+                            <td>The one you set</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_ENCRYPTION</td>
+                            <td>tls</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_FROM_ADDRESS</td>
+                            <td>yourmail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_FROM_NAME</td>
+                            <td>Your project/app name</td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <p class="important">Set the values to System Settings → Mail Configuration</p>
+                    
+                    <a href="assets/img/system-settings.png" target="_blank">
+                        <img src="assets/img/system-settings.png" class="border">
+                    </a>
+                    <p class="important">
+                        If you want to know more details please follow their, <a href="https://cpanel.net/blog/tips-and-tricks/setting-up-and-troubleshooting-smtp-in-cpanel/" target="_blank">Official documentation</a>.
+                        Here is also a <a href="https://www.youtube.com/watch?v=_pJt5zLxPtc&ab_channel=UddhabConsulting" target="_blank">youtube video link</a> for reference.
+                    </p>
+
+                    <hr>
+
+                    <h2 id="hpanel-smtp-setup">Hostinger Panel</h2>
+                    <h4>To create and configure an SMTP email account using hostinger, follow below steps:</h4>
+                    <h4>Step 1: Log In to Hostinger hPanel <a href="https://hpanel.hostinger.com" target="_blank">https://hpanel.hostinger.com</a></h4>
+                    <h4>Step 2: Create an Email Account</h4>
+                    <p>1. Go to Emails from the top menu.</p>
+                    <p>2. Select your domain name.</p>
+                    <p>3. Click "Create New Email Account".</p>
+                    <p>4. Fill in:</p>
+                    <p>&nbsp;&nbsp;&nbsp; a. Email address (e.g., info, test, or hr)</p>
+                    <p>&nbsp;&nbsp;&nbsp; b. Password</p>
+                    <p>5. Click "Create".</p>
+                    <br>
+                    <p class="important">📌 This creates an email like test@yourdomain.com</p>
+                    <br>
+                    <h4>Step 3: Get SMTP Settings</h4>
+                    <p><b>1.</b> After creating the email, go back to the Email Accounts section.</p>
+                    <p><b>2.</b> Find your email and click “Connect App & Devices” or “Set Up Devices”.</p>
+                    <p><b>3.</b> Look for the Manual Configuration or SMTP Settings.</p>
+                    <a href="assets/img/hpanel-smtp.png" target="_blank">
+                        <img src="assets/img/hpanel-smtp.png" class="border">
+                    </a>
+                    
+                    <h4>Example: </h4>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>Input</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>QUEUE_MAIL</td>
+                            <td>Select true / false, (If you select true, you need to run the following command: <b>php artisan queue:work</b> on server)</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_DRIVER_TYPE</td>
+                            <td>Select MAIL MAILER / MAIL DRIVER</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_DRIVER</td>
+                            <td>
+                                Use <b>sendmail</b> if your server has a local mail server installed (like Postfix or Exim).
+                                <br>
+                                Use <b>smtp</b> when sending emails through an external mail service (like Gmail, Mailgun, or your hosting provider's SMTP server).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_HOST</td>
+                            <td>mail.yourdomain.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_PORT</td>
+                            <td>465</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_USERNAME</td>
+                            <td>test@yourdomain.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_PASSWORD</td>
+                            <td>The one you set</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_ENCRYPTION</td>
+                            <td>ssl</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_FROM_ADDRESS</td>
+                            <td>yourmail@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_FROM_NAME</td>
+                            <td>Your project/app name</td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <p class="important">Set the values to System Settings → Mail Configuration</p>
+
+                    <a href="assets/img/hpanel-smtp-img.png" target="_blank">
+                        <img src="assets/img/hpanel-smtp-img.png" class="border">
+                    </a>
+
+                    <p class="important">
+                        If you want to know more details please follow their, <a href="https://support.hostinger.com/en/articles/1575756-how-to-get-email-account-configuration-details-for-hostinger-email" target="_blank">Official documentation</a>.
+                        Here is also a <a href="https://www.youtube.com/watch?v=n-hCoeAe0ao&ab_channel=SendMails%7CEmailMarketing%26AutomationPlatform" target="_blank">youtube video link</a> for reference.
+                    </p>
+
+                    <br>
+
+                    <p class="important"><b>Note:</b> Please note that if you change QUEUE_MAIL from false to true, you need to run the following command: <code>php artisan queue:work</code>. <strong>Remember:</strong> The command path should be: <code>/home/u186958312/domains/yourdomain.com/public_html</code>. Make sure you're in the correct path.</p>
+
+                    <p class="important"><b>Note:</b> If you're not familiar with running the command, there's another option. Simply visit <code>yourdomain.com/queue-work</code> and it will be executed automatically.</p>
+
+                    <p class="important"><b>Note:</b> If you select QUEUE_MAIL as true but do not run the command or visit the URL, email functionality will not work properly.</p>
+
+                    <hr>
+
+                    <h2 id="gmail-smtp-setup">Gmail</h2>
+                    <h4>To create and configure an SMTP email account using Gmail, follow below steps:</h4>
+                    <h4>Step 1: Enable 2-Step Verification on Google Account</h4>
+                    <p>1. Go to <a href="https://myaccount.google.com">https://myaccount.google.com</a></p>
+                    <p>2. Click "Security" from the left menu.</p>
+                    <p>3. Under "Signing in to Google", enable 2-Step Verification.</p>
+                    <a href="assets/img/gmail_security.png" target="_blank">
+                        <img src="assets/img/gmail_security.png" class="border">
+                    </a>
+                    <p>4. Complete the setup with your phone or other options.</p>
+
+                    <h4>Step 2: Create an App Password</h4>
+                    <p>After enabling 2-Step Verification:</p>
+                    <p>1. Visit: <a href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</a></p>
+                    <p>2. Sign in if asked.</p>
+                    <p>3. Under "Select the app", choose Other (Custom name).</p>
+                    <p>4. Give it a name like "SMTP App" and click Generate.</p>
+                    <a href="assets/img/app_password.png" target="_blank">
+                        <img src="assets/img/app_password.png" class="border">
+                    </a>
+                    <p>5. Google will show you a 16-character password — copy it. You’ll use this as your SMTP password</p>
+                    <a href="assets/img/generate_password.png" target="_blank">
+                        <img src="assets/img/generate_password.png" class="border">
+                    </a>
+
+
+                    <h4>Example: </h4>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>Input</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>QUEUE_MAIL</td>
+                            <td>Select true / false, (If you select true, you need to run the following command: <b>php artisan queue:work</b> on server)</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_DRIVER_TYPE</td>
+                            <td>Select MAIL MAILER / MAIL DRIVER</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_DRIVER</td>
+                            <td>smtp</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_HOST</td>
+                            <td>smtp.gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_PORT</td>
+                            <td>587</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_USERNAME</td>
+                            <td>your_email@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_PASSWORD</td>
+                            <td>your_app_password</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_ENCRYPTION</td>
+                            <td>tls</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_FROM_ADDRESS</td>
+                            <td>your_email@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>MAIL_FROM_NAME</td>
+                            <td>Your project/app name</td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <p class="important">Set the values to System Settings → Mail Configuration</p>
+                    <a href="assets/img/gmail_smtp.png" target="_blank">
+                        <img src="assets/img/gmail_smtp.png" class="border">
+                    </a>
+
+                    <p class="important">
+                        If you want to know more details please follow their, <a href="https://laravel.com/docs/10.x/mail" target="_blank">Official documentation</a>.
+                        Here is also a <a href="https://www.youtube.com/watch?v=ZfEK3WP73eY&ab_channel=GuideRealm" target="_blank">youtube video link</a> for reference.
+                    </p>
+
+                    <hr>
+
+                    <h3>Others</h3>
+                    <a href="assets/img/other.png" target="_blank">
+                        <img src="assets/img/other.png" class="border">
+                    </a>
+                    <h3>General Settings</h3>
+                    <p class="m-0">You have the capability to modify the general project information.</p>
+                    <a href="assets/img/general_setting.png" target="_blank">
+                        <img src="assets/img/general_setting.png" class="border">
+                    </a>
+                </section>
+  
+                <hr class="mt-5">
+
+                <div class="tool-setup-section" id="change-logs">
+                    <h1 style="margin-top: 35px;">Admin Change Logs & Update Guide</h1>
+                    <p class="important"><b>Note: </b> Before updating to the new version, please ensure you have a database and full project backup, and that your project is already updated to the latest version. This is extremely important!</p>
+
+                    <h5 class=""><strong>Version:</strong> 5.1.3( 27 May 2025 )</h5>
+
+                    <ol>
+                        <li>Profile setup issue fixed.</li>
+                        <li>Minor issues fixed.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 5.1.2 ( 25 May 2025 )</h5>
+
+                    <ol>
+                        <li>Subscribers list issue fixed.</li>
+                        <li>Sign-up system updated.</li>
+                        <li>Minor issues fixed.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>,<b>resources</b>,<b>routes</b>, <b>config</b> & <b>public/assets</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 5.1.1 ( 18 May 2025 )</h5>
+
+                    <ol>
+                        <li>Fixed data type issues.</li>
+                        <li>Fixed 5.0 update issues.</li>
+                        <li>Optimized some codes.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 5.1 ( 17 May 2025 )</h5>
+
+                    <ol>
+                        <li>Type casting issues fixed.</li>
+                        <li>Fixed some known issues.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 5.0 ( 15 May 2025 )</h5>
+
+                    <ol>
+                        <li>Database updated for invertory sales.</li>
+                        <li>Fixed otp email resend issues.</li>
+                        <li>Timezone issues fixed.</li>
+                        <li>Business update issue fixed.</li>
+                        <li>Payment gateways issues fixed.</li>
+                        <li>Payment Gateway design updated.</li>
+                        <li>Plan purchase and payment option has been added to the signup process.</li>
+                        <li>Add-On installation system updated for new Add-On.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders & files: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b>, <b>vendor</b>, <b>composer.json</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.9 ( 17 April 2025 )</h5>
+
+                    <ol>
+                        <li>Password change API implemented.</li>
+                        <li>Fixed issue with invoice amount in words.</li>
+                        <li>Improved invoice design.</li>
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets</b> and <b>routes</b>.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.8 ( 16 April 2025 )</h5>
+
+                    <ol>
+                        <li>Added "change amount" column in sales and purchases table.</li>
+                        <li>Update Sales and Purchases api and their model.</li>
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.7 ( 24 March 2025 )</h5>
+
+                    <ol>
+                        <li>Invoice update api added.</li>
+                        <li>Some codes and query optimized.</li>
+                        <li>Invoices updated.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>resources</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.6 ( 17 March 2025 )</h5>
+
+                    <ol>
+                        <li>Customer phone unique validation removed in api.</li>
+                        <li>Customer database updated.</li>
+                        <li>Optimized some codes.</li>
+                        <li>Party phone validation api updated in Sales, Purchase, Supplier & Customer.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b> and <b>database</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.5 ( 13 March 2025 )</h5>
+
+                    <ol>
+                        <li>Change some design and fixed some design issues.</li>
+                        <li>Payment type api added.</li>
+                        <li>Number format updated.</li>
+                        <li>Optimized codes and improved.</li>
+                        <li>Fixed minor bugs</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets</b>, <b>database</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.4 ( 27 February 2025 )</h5>
+
+                    <ol>
+                        <li>Add confirm password field in Business create & update secion.</li>
+                        <li>Fixed sales issues if the payment type is unpaid/paid.</li>
+                        <li>Customized error pages added.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets</b>, <b>resources</b>. You don't need to do anything after replacing them.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.3 ( 23 February 2025 )</h5>
+
+                    <ol>
+                        <li>Alert qty, expire date added in products table</li>
+                        <li>Purchase price split into Exclusive & Inclusive.</li>
+                        <li>Subscription payment issues fixed.</li>
+                        <li>Dashboard api issue fixed.</li>
+                        <li>Request limit updated for single user.</li>
+                        <li>Manual payment status issue fixed.</li>
+                        <li>Attachment added with sale.</li>
+                        <li>Some design issues updated.</li>
+                        <li>Text editor added for payment gateways.</li>
+                        <li>Profile update issue fixed.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.2 ( 04 February 2025 )</h5>
+                    
+                    <ol>
+                        <li>Barcode issues fixed.</li>
+                        <li>Fixed system settings issues.</li>
+                        <li>Barcode print page design issues fixed.</li>
+                        <li>Summernote added for payment gateways instructions.</li>
+                        <li>Dashboard API issue fixed.</li>
+                        <li>Vat name and Vat number added on business setup.</li>
+                        <li>Subscription logic updated.</li>
+
+                        <br>
+
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>config</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.1.1 ( 30 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Fixed 4.1 update issue.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please follow the 4.1 update guide, in this version we've just fixed version 4.1 update issue, so you don't need to update anything for this version.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.1 ( 29 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Update some design for landing page.</li>
+                        <li>Buy Now button added into pricing plan.</li>
+                        <li>Fixed stock api issue.</li>
+                        <li>Vat and vat group added for app.</li>
+                        <li>Dynamically vat option added into products, sales and purchase.</li>
+                        <li>Fixed some js issues.</li>
+                        <li>Rate option added into currency module.</li>
+                        <li>Login page background image dynamically added.</li>
+                        <li>Installer updated.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b> and <b>vendor</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+                    
+                    <h5 class=""><strong>Version:</strong> 4.1 ( 29 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Update some design for landing page.</li>
+                        <li>Buy Now button added into pricing plan.</li>
+                        <li>Fixed stock api issue.</li>
+                        <li>Vat and vat group added for app.</li>
+                        <li>Dynamically vat option added into products, sales and purchase.</li>
+                        <li>Fixed some js issues.</li>
+                        <li>Rate option added into currency module.</li>
+                        <li>Login page background image dynamically added.</li>
+                        <li>Installer updated.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b> and <b>vendor</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+                    
+                    <h5 class=""><strong>Version:</strong> 4.0.1 ( 11 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Documentation updated.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> In this version, you don’t need to do anything. We’ve only updated the documentation.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 4.0 ( 09 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Payment gateways issues fixed.</li>
+                        <li>Plan edit issue fixed.</li>
+                        <li>Removed and update some optimized codes.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders & files: <b>app</b>, <b>config</b>, <b>resources</b>, <b>routes</b> and <b>vendor</b> and <b>composer.json(file)</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 3.9 ( 07 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Fixed manual payment issues.</li>
+                        <li>Subscription report and invoice added.</li>
+                        <li>Gateways status issue fixed.</li>
+                        <li>Fixed subscription plan edit issue.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets/css</b> and <b>public/assets/plugins</b>, <b>resources</b> and <b>routes</b>. You don't need to do anything after replacing them.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 3.8 ( 04 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Fixed advertisement api issue.</li>
+                        <li>Add and removed some new codes.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b> and <b>resources</b>. You don't need to do anything after replacing them.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+                    
+                    <h5 class=""><strong>Version:</strong> 3.7 ( 02 January 2025 )</h5>
+                    
+                    <ol>
+                        <li>Fixed sign out issues for multiple devices for the app.</li>
+                        <li>Sidebar responsive issue fixed.</li>
+                        <li>Logo issue fixed for login page.</li>
+                        <li>Timezone issue fixed.</li>
+                        <li>Free plan issue fixed.</li>
+
+                        <br>
+
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets/css</b> and <b>resources</b>. You don't need to do anything after replacing them.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 3.6</h5>
+                    
+                    <ol>
+                        <li>Fixed payment gateways issues for different currencies.</li>
+                        <li>Increase the pagination data limit from 10 to 20.</li>
+                        <li>Invoice logo dynamically added.</li>
+                        <li>Language issue fixed.</li>
+                        <li>Purchase return issue fixed.</li>
+
+                        <br>
+                        
+                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 3.5</h5>
+                    
+                    <ol>
+                        <li>Update Flutter app.</li>
+                        <li>Code optimized.</li>
+
+                        <br>
+                        
+                        <p class="important"><b>Note: </b> You don’t need to update anything for the admin panel. This update is specifically for the app.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 3.4</h5>
+                    
+                    <ol>
+                        <li>New packages added for web addon.</li>
+                        <li>Addon installation system added.</li>
+                        <li>Fixed some responsive issues and update design.</li>
+                        <li>100+ Languages Added.</li>
+                        <li>Currency bug fixed.</li>
+                        <li>Update Documentation.</li>
+
+                        <br>
+                        
+                        <p class="important"><b>Note: </b> Please replace the following folders and files: <b>app</b>, <b>database</b>, <b>lang</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b>, <b>vendor</b> and <b>modules_statuses.json (Please upload this file if you don’t already have it.)</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
+
+                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
+                    </ol>
+
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 3.1</h5>
+                    <ol>
+                        <li>Fixed sales return loss profit calculation issues.</li>
+                        <li>Documentation updated.</li>
+
+                        <p class="important"><b>Note: </b> Please update app folder only.</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 3.0</h5>
+                    <ol>
+                        <li>Sales return added.</li>
+                        <li>Purchase return added.</li>
+                        <li>Sale List api updated.</li>
+                        <li>Purchase List api updated.</li>
+                        <li>Remove some extra codes.</li>
+                        <li>Optimized some codes.</li>
+
+                        <p class="important"><b>Note: </b> Please update app databases and routes folders and visit yourdomain.com/migrate</p>
+                    </ol>
+                    <br>
+
+                    <h5 class=""><strong>Version:</strong> 2.5 ( 15/10/2024 )</h5>
+                    <ol>
+                        <li>Admin panel Installation issues fixed.</li>
+
+                        <p class="important"><b>Note: </b> You don't need to update anything this is for new users.</p>
+                    </ol>
+
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 2.4 ( 01/10/2024 )</h5>
+                    <ol>
+                        <li>Fixed product codes issue.</li>
+                        <li>Add income module.</li>
+                        <li>Fixed some minor issues.</li>
+
+                        <p class="important"><b>Note: </b> Please update app, lang, public/assets, resources and routes folders and visit yourdomain.com/migrate</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 2.3 ( 12/09/2024 )</h5>
+                    <ol>
+                        <li>Admin Panel SMTP settings issues fixed.</li>
+                        <li>Logout issues fixed.</li>
+                        <li>Password field added on users create or update.</li>
+
+                        <p class="important"><b>Note: </b> Replace app, resources and routes folders.</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 2.2 ( 02/09/2024 )</h5>
+                    <ol>
+                        <p class="important"><b>Note: </b> This version is not for the admin panel.</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 2.1 ( 23/08/2024 )</h5>
+                    <ol>
+                        <p class="important"><b>Note: </b> This version is not for the admin panel.</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 2.0</h5>
+                    <ol>
+                        <li>Phone unique validation removed.</li>
+                        <li>Login Issue fixed.</li>
+                        <li>Fixed dashboard api issue.</li>
+                        <li>Fixed user role create api issue.</li>
+
+                        <p class="important"><b>Note: </b> Please update app and databases folders and visit yourdomain.com/migrate</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 1.2 ( 07/08/2024 )</h5>
+                    <ol>
+                        <li>Dashboard api issues fixed.</li>
+
+                        <p class="important"><b>Note: </b> Please update app folder.</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 1.1 ( 06/08/2024 )</h5>
+                    <ol>
+                        <li>Fixes queue and jobs issue.</li>
+
+                        <p class="important"><b>Note: </b> Please update app folder.</p>
+                    </ol>
+                    <br>
+                    <h5 class=""><strong>Version:</strong> 1.0.0 ( 6 August 2024 )</h5>
+                    <ol>
+                        <li>Initial Release</li>
+                    </ol>
+                </div>
+                
+                <hr class="mt-5">
+        </div>
+        <!--/right-->
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+<div class="back-to-top" id="scrollToTopButton">
+		<span class="icon">
+			<svg viewBox="0 0 451.8 451.8">
+				<path d="M225.8,97.1c8.1,0,16.2,3.1,22.4,9.3l194.3,194.2c12.4,12.4,12.4,32.4,0,44.8c-12.4,12.4-32.4,12.4-44.7,0L225.9,173.6L54,345.4c-12.4,12.4-32.4,12.4-44.7,0C-3.1,333-3.1,313,9.3,300.8l194.3-194.3C209.6,100.2,217.8,97.1,225.8,97.1z"></path>
+			</svg>
+		</span>
+</div>
+
+<!-- Javascript -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
