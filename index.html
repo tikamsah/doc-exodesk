@@ -278,37 +278,172 @@
                             <p>Go to your website address, then you'll see an installation wizard. To open the
                                 installer. Visit</p>
                         </div>
-                        <p class="important">yourdomain.com/install</p>
-                        <p>Now the installer will show up.The First screen will be Welcome Screen</p>
+
+                      
+                        <p class="code-window">
+APP_NAME=ExoDesk
+APP_ENV=production
+APP_KEY=base64:sC11BRr1pf9qVaWIIEFoRVb6sGFT6uCOfFZ4MmijMzQ=
+APP_DEBUG=true
+APP_URL=your_full_website_url
+
+LOG_CHANNEL=stack
+
+DB_CONNECTION=mysql
+DB_HOST=your_database_host_name
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_host_username
+DB_PASSWORD=your_database_host_password
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=database
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+CRON_JOB_TOKEN='put_your_token_here'
+ENABLE_EMAIL_NOTIFICATIONS=false
+MAIL_MAILER=smtp
+MAIL_HOST=your_mail_host
+MAIL_PORT=587
+MAIL_USERNAME=your_email_address
+MAIL_PASSWORD=your_mail_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your_email_address
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+                        </p>
+
+                        <hr/>  
+                           <div class="page-header">
+                               <h3>🔧 Environment Configuration Instructions</h3>
+                           </div>                     
+                         <a href="assets/img/installer.png" target="_blank">
+                            <img src="assets/img/installer.png" alt="" width="448" class="border">
+                        </a> 
+                           <ul>
+                          <li><strong>APP_NAME=ExoDesk</strong> – Set the name of your application.</li>
+                          <li><strong>APP_ENV=production</strong> – Set to <code>production</code> for live environments.</li>
+                          <li><strong>APP_URL=your_full_website_url</strong> – Replace with your full website URL (e.g., <code>https://example.com</code>).</li>
+                          <li><strong>DB_CONNECTION=mysql</strong> – Leave as <code>mysql</code> unless using another DB system.</li>
+                          <li><strong>DB_HOST=your_database_host_name</strong> – Replace with your database host (e.g., <code>127.0.0.1</code> or server IP).</li>
+                          <li><strong>DB_PORT=3306</strong> – Default MySQL port. Change only if necessary.</li>
+                          <li><strong>DB_DATABASE=your_database_name</strong> – Your database name.</li>
+                          <li><strong>DB_USERNAME=your_database_host_username</strong> – Username used to access the database.</li>
+                          <li><strong>DB_PASSWORD=your_database_host_password</strong> – Password for the database user.</li>
+                          <li><strong>CRON_JOB_TOKEN='put_your_token_here'</strong> – Replace with a secure token used to run cron jobs.</li>
+                          <li><strong>ENABLE_EMAIL_NOTIFICATIONS=false</strong> – Set to <code>true</code> to enable email notifications.</li>
+                          <li><strong>MAIL_MAILER=smtp</strong> – Use <code>smtp</code> to send emails.</li>
+                          <li><strong>MAIL_HOST=your_mail_host</strong> – Your mail server host (e.g., <code>smtp.gmail.com</code>).</li>
+                          <li><strong>MAIL_PORT=587</strong> – Use <code>587</code> for TLS or <code>465</code> for SSL.</li>
+                          <li><strong>MAIL_USERNAME=your_email_address</strong> – Your email address or login for SMTP.</li>
+                          <li><strong>MAIL_PASSWORD=your_mail_password</strong> – Your SMTP password.</li>
+                          <li><strong>MAIL_ENCRYPTION=tls</strong> – Encryption method; typically <code>tls</code>.</li>
+                          <li><strong>MAIL_FROM_ADDRESS=your_email_address</strong> – Sender email address for outgoing emails.</li>
+                          <li><strong>MAIL_FROM_NAME="${APP_NAME}"</strong> – Uses <code>APP_NAME</code> (e.g., "ExoDesk") as the sender name.</li>
+                        </ul>
+
+                             <a href="assets/img/installer.png" target="_blank">
+                                <img src="assets/img/installer.png" alt="" width="448" class="border">
+                            </a>
+                        <p>Now the application will launch, and the first screen displayed will be the Login Screen.</p>
                         <a href="assets/img/installer.png" target="_blank">
                             <img src="assets/img/installer.png" alt="" width="448" class="border">
                         </a>
 
-                        <p class="warning">Note : If you are not able to access the website by accessing
-                            yourdomain.com/install, but
-                            you are able to access it via yourdomain.com/index.php/install, this means that you probably
-                            don't have
-                            Apache mod_rewrite installed and enabled. </p>
-
-                        <h3>Server Requirements</h3>
-                        <p>After clicking on "Check requirement" button, you will be redirected to System Requirements
-                            step during
-                            the installation wizard, System Requirements.</p>
-                        <a href="assets/img/requirements-check.png" target="_blank">
-                            <img src="assets/img/requirements-check.png" alt="" width="443" class="border">
+                           <div class="page-header">
+                               <h3>Cron Jobs Configuration for Email</h3>
+                           </div>                     
+                        
+                        <a href="assets/img/cron_jobs.png" target="_blank">
+                            <img src="assets/img/cron_jobs.png" alt="" class="border">
                         </a>
-                        <h3>Directory Permissions</h3>
 
-                        <p>After successfully enabling and installing all required PHP extensions, next step is to set
-                            the
-                            appropriate permissions for some system folders that shows on below picture.</p>
 
-                        <p class="info">For giving permissions please open your terminal window. and type command <code>sudo
-                            chmod
-                            777 directory_name</code> for example <code>sudo chmod 777 app</code></p>
-                        <a href="assets/img/permissions1.png" target="_blank">
-                            <img src="assets/img/permissions1.png" alt="" width="448" class="border">
-                        </a>
+                        
+                      <h3>📧 Cron Job Configuration for Email – Hostinger</h3>
+
+                      <ul>
+                        <li><strong>Login</strong> to your Hostinger control panel.</li>
+
+                        <li>
+                          From the left sidebar, navigate to: <br>
+                          <code>Advanced → Cron Jobs</code>
+                        </li>
+
+                        <li>
+                          Under <strong>Create a New Cron Job</strong>, select the <strong>Custom</strong> option.
+                        </li>
+
+                        <li>
+                          In the <strong>Command to run</strong> field, enter:<br>
+                          <code>wget -q -O - "https://exodesk.nepexo.com/cron?token=eeee"</code><br>
+                          <em>Replace <code>eeee</code> with your actual <code>CRON_JOB_TOKEN</code> from the <code>.env</code> file.</em>
+                        </li>
+
+                        <li>
+                          Under <strong>Common options</strong>, choose:<br>
+                          <code>Twice an hour (0,30 * * * *)</code>
+                        </li>
+
+                        <li>
+                          Confirm the following time settings:
+                          <ul>
+                            <li>Minute: <code>Every 30 minutes (0,30)</code></li>
+                            <li>Hour: <code>Every Hour (*)</code></li>
+                            <li>Day: <code>Every Day (*)</code></li>
+                            <li>Month: <code>Every Month (*)</code></li>
+                            <li>Weekday: <code>Every Weekday (*)</code></li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          Click the <strong>Save</strong> button to apply the cron job.
+                        </li>
+                      </ul>
+
+                      <h4>✅ Additional Notes</h4>
+                      <ul>
+                        <li>
+                          Make sure your <code>.env</code> file includes:<br>
+                          <code>ENABLE_EMAIL_NOTIFICATIONS=true</code><br>
+                          <code>CRON_JOB_TOKEN=your_secure_token</code>
+                        </li>
+                        <li>
+                          This cron job ensures automated email notifications and scheduled tasks run every 30 minutes.
+                        </li>
+                        <li>
+                          Use a secure, random token to protect the cron endpoint from unauthorized access.
+                        </li>
+                      </ul>
+
+
+
+
+                        <a href="assets/img/installer.png" target="_blank">
+                            <img src="assets/img/installer.png" alt="" width="448" class="border">
+                        </a> 
+
+               
+                       
 
                         <p>Note : If your control panel has no terminal window, then go to public_html
                             or the directory where you have uploaded the project.
@@ -329,25 +464,7 @@
                             Note: You have to change the directory permissions for the <code>storage/logs</code> and <code>bootstrap/cache</code> folders as shown in the image. If these folders do not have the correct permissions, please adjust them accordingly.
                         </p>
 
-                        <h3>Database/Environment Setting</h3>
-
-                        <p>You have to fill in your database credentials</p>
-                        <a href="assets/img/db-config.png" target="_blank">
-                            <img src="assets/img/db-config.png" alt="" width="447" class="border">
-                        </a>
-
-                        <h3>Exit</h3>
-
-                        <p>The last step is exit step.</p>
-                        <a href="assets/img/save-db.png" target="_blank">
-                            <img src="assets/img/save-db.png" alt="" width="445" class="border">
-                        </a>
-                        <a href="assets/img/install.png" target="_blank">
-                            <img src="assets/img/install.png" alt="" width="445" class="border">
-                        </a>
-                        <a href="assets/img/success.png" target="_blank">
-                            <img src="assets/img/success.png" alt="" width="445" class="border">
-                        </a>
+                      
                         <p class="important">Congratulations you have successfully installed this project on your
                             server. 😀</p>
                         <p> &nbsp;</p>
@@ -1044,501 +1161,10 @@
 
                 <div class="tool-setup-section" id="change-logs">
                     <h1 style="margin-top: 35px;">Admin Change Logs & Update Guide</h1>
-                    <p class="important"><b>Note: </b> Before updating to the new version, please ensure you have a database and full project backup, and that your project is already updated to the latest version. This is extremely important!</p>
+                    <p class="important"><b>Note: </b> Before proceeding with the update, please ensure you have a complete backup of both your database and project files. Also, make sure your current project is already running the latest version. This step is critical to prevent data loss or compatibility issues.</p>
 
-                    <h5 class=""><strong>Version:</strong> 5.1.3( 27 May 2025 )</h5>
-
-                    <ol>
-                        <li>Profile setup issue fixed.</li>
-                        <li>Minor issues fixed.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 5.1.2 ( 25 May 2025 )</h5>
-
-                    <ol>
-                        <li>Subscribers list issue fixed.</li>
-                        <li>Sign-up system updated.</li>
-                        <li>Minor issues fixed.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>,<b>resources</b>,<b>routes</b>, <b>config</b> & <b>public/assets</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 5.1.1 ( 18 May 2025 )</h5>
-
-                    <ol>
-                        <li>Fixed data type issues.</li>
-                        <li>Fixed 5.0 update issues.</li>
-                        <li>Optimized some codes.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 5.1 ( 17 May 2025 )</h5>
-
-                    <ol>
-                        <li>Type casting issues fixed.</li>
-                        <li>Fixed some known issues.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folder: <b>app</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 5.0 ( 15 May 2025 )</h5>
-
-                    <ol>
-                        <li>Database updated for invertory sales.</li>
-                        <li>Fixed otp email resend issues.</li>
-                        <li>Timezone issues fixed.</li>
-                        <li>Business update issue fixed.</li>
-                        <li>Payment gateways issues fixed.</li>
-                        <li>Payment Gateway design updated.</li>
-                        <li>Plan purchase and payment option has been added to the signup process.</li>
-                        <li>Add-On installation system updated for new Add-On.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders & files: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b>, <b>vendor</b>, <b>composer.json</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.9 ( 17 April 2025 )</h5>
-
-                    <ol>
-                        <li>Password change API implemented.</li>
-                        <li>Fixed issue with invoice amount in words.</li>
-                        <li>Improved invoice design.</li>
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets</b> and <b>routes</b>.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.8 ( 16 April 2025 )</h5>
-
-                    <ol>
-                        <li>Added "change amount" column in sales and purchases table.</li>
-                        <li>Update Sales and Purchases api and their model.</li>
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.7 ( 24 March 2025 )</h5>
-
-                    <ol>
-                        <li>Invoice update api added.</li>
-                        <li>Some codes and query optimized.</li>
-                        <li>Invoices updated.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>resources</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.6 ( 17 March 2025 )</h5>
-
-                    <ol>
-                        <li>Customer phone unique validation removed in api.</li>
-                        <li>Customer database updated.</li>
-                        <li>Optimized some codes.</li>
-                        <li>Party phone validation api updated in Sales, Purchase, Supplier & Customer.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b> and <b>database</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.5 ( 13 March 2025 )</h5>
-
-                    <ol>
-                        <li>Change some design and fixed some design issues.</li>
-                        <li>Payment type api added.</li>
-                        <li>Number format updated.</li>
-                        <li>Optimized codes and improved.</li>
-                        <li>Fixed minor bugs</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets</b>, <b>database</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.4 ( 27 February 2025 )</h5>
-
-                    <ol>
-                        <li>Add confirm password field in Business create & update secion.</li>
-                        <li>Fixed sales issues if the payment type is unpaid/paid.</li>
-                        <li>Customized error pages added.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets</b>, <b>resources</b>. You don't need to do anything after replacing them.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.3 ( 23 February 2025 )</h5>
-
-                    <ol>
-                        <li>Alert qty, expire date added in products table</li>
-                        <li>Purchase price split into Exclusive & Inclusive.</li>
-                        <li>Subscription payment issues fixed.</li>
-                        <li>Dashboard api issue fixed.</li>
-                        <li>Request limit updated for single user.</li>
-                        <li>Manual payment status issue fixed.</li>
-                        <li>Attachment added with sale.</li>
-                        <li>Some design issues updated.</li>
-                        <li>Text editor added for payment gateways.</li>
-                        <li>Profile update issue fixed.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version and please don't forget to reload hard your browser. Without visiting the URL and reloading hard, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.2 ( 04 February 2025 )</h5>
-                    
-                    <ol>
-                        <li>Barcode issues fixed.</li>
-                        <li>Fixed system settings issues.</li>
-                        <li>Barcode print page design issues fixed.</li>
-                        <li>Summernote added for payment gateways instructions.</li>
-                        <li>Dashboard API issue fixed.</li>
-                        <li>Vat name and Vat number added on business setup.</li>
-                        <li>Subscription logic updated.</li>
-
-                        <br>
-
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>config</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.1.1 ( 30 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Fixed 4.1 update issue.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please follow the 4.1 update guide, in this version we've just fixed version 4.1 update issue, so you don't need to update anything for this version.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.1 ( 29 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Update some design for landing page.</li>
-                        <li>Buy Now button added into pricing plan.</li>
-                        <li>Fixed stock api issue.</li>
-                        <li>Vat and vat group added for app.</li>
-                        <li>Dynamically vat option added into products, sales and purchase.</li>
-                        <li>Fixed some js issues.</li>
-                        <li>Rate option added into currency module.</li>
-                        <li>Login page background image dynamically added.</li>
-                        <li>Installer updated.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b> and <b>vendor</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-                    
-                    <h5 class=""><strong>Version:</strong> 4.1 ( 29 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Update some design for landing page.</li>
-                        <li>Buy Now button added into pricing plan.</li>
-                        <li>Fixed stock api issue.</li>
-                        <li>Vat and vat group added for app.</li>
-                        <li>Dynamically vat option added into products, sales and purchase.</li>
-                        <li>Fixed some js issues.</li>
-                        <li>Rate option added into currency module.</li>
-                        <li>Login page background image dynamically added.</li>
-                        <li>Installer updated.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b> and <b>vendor</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-                    
-                    <h5 class=""><strong>Version:</strong> 4.0.1 ( 11 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Documentation updated.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> In this version, you don’t need to do anything. We’ve only updated the documentation.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 4.0 ( 09 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Payment gateways issues fixed.</li>
-                        <li>Plan edit issue fixed.</li>
-                        <li>Removed and update some optimized codes.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders & files: <b>app</b>, <b>config</b>, <b>resources</b>, <b>routes</b> and <b>vendor</b> and <b>composer.json(file)</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 3.9 ( 07 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Fixed manual payment issues.</li>
-                        <li>Subscription report and invoice added.</li>
-                        <li>Gateways status issue fixed.</li>
-                        <li>Fixed subscription plan edit issue.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets/css</b> and <b>public/assets/plugins</b>, <b>resources</b> and <b>routes</b>. You don't need to do anything after replacing them.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 3.8 ( 04 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Fixed advertisement api issue.</li>
-                        <li>Add and removed some new codes.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b> and <b>resources</b>. You don't need to do anything after replacing them.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-                    
-                    <h5 class=""><strong>Version:</strong> 3.7 ( 02 January 2025 )</h5>
-                    
-                    <ol>
-                        <li>Fixed sign out issues for multiple devices for the app.</li>
-                        <li>Sidebar responsive issue fixed.</li>
-                        <li>Logo issue fixed for login page.</li>
-                        <li>Timezone issue fixed.</li>
-                        <li>Free plan issue fixed.</li>
-
-                        <br>
-
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>public/assets/css</b> and <b>resources</b>. You don't need to do anything after replacing them.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 3.6</h5>
-                    
-                    <ol>
-                        <li>Fixed payment gateways issues for different currencies.</li>
-                        <li>Increase the pagination data limit from 10 to 20.</li>
-                        <li>Invoice logo dynamically added.</li>
-                        <li>Language issue fixed.</li>
-                        <li>Purchase return issue fixed.</li>
-
-                        <br>
-                        
-                        <p class="important"><b>Note: </b> Please replace the following folders: <b>app</b>, <b>database</b> and <b>routes</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 3.5</h5>
-                    
-                    <ol>
-                        <li>Update Flutter app.</li>
-                        <li>Code optimized.</li>
-
-                        <br>
-                        
-                        <p class="important"><b>Note: </b> You don’t need to update anything for the admin panel. This update is specifically for the app.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 3.4</h5>
-                    
-                    <ol>
-                        <li>New packages added for web addon.</li>
-                        <li>Addon installation system added.</li>
-                        <li>Fixed some responsive issues and update design.</li>
-                        <li>100+ Languages Added.</li>
-                        <li>Currency bug fixed.</li>
-                        <li>Update Documentation.</li>
-
-                        <br>
-                        
-                        <p class="important"><b>Note: </b> Please replace the following folders and files: <b>app</b>, <b>database</b>, <b>lang</b>, <b>public/assets</b>, <b>resources</b>, <b>routes</b>, <b>vendor</b> and <b>modules_statuses.json (Please upload this file if you don’t already have it.)</b>. After replacing them, visit <b>yourdomain.com/update</b> to install the new version. Without visiting the URL, your project will not function correctly, so ensure you complete this step.</p>
-
-                        <p class="important"><b>Note: </b> If you face any issues with the update, please contact us.</p>
-                    </ol>
-
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 3.1</h5>
-                    <ol>
-                        <li>Fixed sales return loss profit calculation issues.</li>
-                        <li>Documentation updated.</li>
-
-                        <p class="important"><b>Note: </b> Please update app folder only.</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 3.0</h5>
-                    <ol>
-                        <li>Sales return added.</li>
-                        <li>Purchase return added.</li>
-                        <li>Sale List api updated.</li>
-                        <li>Purchase List api updated.</li>
-                        <li>Remove some extra codes.</li>
-                        <li>Optimized some codes.</li>
-
-                        <p class="important"><b>Note: </b> Please update app databases and routes folders and visit yourdomain.com/migrate</p>
-                    </ol>
-                    <br>
-
-                    <h5 class=""><strong>Version:</strong> 2.5 ( 15/10/2024 )</h5>
-                    <ol>
-                        <li>Admin panel Installation issues fixed.</li>
-
-                        <p class="important"><b>Note: </b> You don't need to update anything this is for new users.</p>
-                    </ol>
-
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 2.4 ( 01/10/2024 )</h5>
-                    <ol>
-                        <li>Fixed product codes issue.</li>
-                        <li>Add income module.</li>
-                        <li>Fixed some minor issues.</li>
-
-                        <p class="important"><b>Note: </b> Please update app, lang, public/assets, resources and routes folders and visit yourdomain.com/migrate</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 2.3 ( 12/09/2024 )</h5>
-                    <ol>
-                        <li>Admin Panel SMTP settings issues fixed.</li>
-                        <li>Logout issues fixed.</li>
-                        <li>Password field added on users create or update.</li>
-
-                        <p class="important"><b>Note: </b> Replace app, resources and routes folders.</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 2.2 ( 02/09/2024 )</h5>
-                    <ol>
-                        <p class="important"><b>Note: </b> This version is not for the admin panel.</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 2.1 ( 23/08/2024 )</h5>
-                    <ol>
-                        <p class="important"><b>Note: </b> This version is not for the admin panel.</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 2.0</h5>
-                    <ol>
-                        <li>Phone unique validation removed.</li>
-                        <li>Login Issue fixed.</li>
-                        <li>Fixed dashboard api issue.</li>
-                        <li>Fixed user role create api issue.</li>
-
-                        <p class="important"><b>Note: </b> Please update app and databases folders and visit yourdomain.com/migrate</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 1.2 ( 07/08/2024 )</h5>
-                    <ol>
-                        <li>Dashboard api issues fixed.</li>
-
-                        <p class="important"><b>Note: </b> Please update app folder.</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 1.1 ( 06/08/2024 )</h5>
-                    <ol>
-                        <li>Fixes queue and jobs issue.</li>
-
-                        <p class="important"><b>Note: </b> Please update app folder.</p>
-                    </ol>
-                    <br>
-                    <h5 class=""><strong>Version:</strong> 1.0.0 ( 6 August 2024 )</h5>
+                   
+                    <h5 class=""><strong>Version:</strong> 1.0.0 ( 13 July 2025 )</h5>
                     <ol>
                         <li>Initial Release</li>
                     </ol>
