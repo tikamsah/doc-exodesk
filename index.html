@@ -263,6 +263,14 @@
                             <img src="assets/img/upload4.png" alt="" class="border">
                         </a>
 
+                        <a href="assets/img/upload5.png" target="_blank">
+                            <img src="assets/img/upload5.png" alt="" class="border">
+                        </a>
+
+                        <a href="assets/img/upload6.png" target="_blank">
+                            <img src="assets/img/upload6.png" alt="" class="border">
+                        </a>
+
                         <p class="important"><b>Note: </b> Important Make sure that you have .env file in your folder.
                         </p>
 
@@ -455,11 +463,6 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                         <a href="assets/img/permissions2.png" target="_blank">
                             <img src="assets/img/permissions2.png" alt="" class="border">
                         </a>
-                        <span>Change permissions for specific directory</span>
-                        <a href="assets/img/permissions3.png" target="_blank">
-                            <img src="assets/img/permissions3.png" alt="" class="border">
-                        </a>
-
                         <p class="important">
                             Note: You have to change the directory permissions for the <code>storage/logs</code> and <code>bootstrap/cache</code> folders as shown in the image. If these folders do not have the correct permissions, please adjust them accordingly.
                         </p>
@@ -471,30 +474,58 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                     </section>
 
                     <section id="password">
-                        <div class="page-header">
+                          <div class="page-header">
                             <h3>Default Password</h3>
-                        </div>
-                        <p>You can login using several methods depending on your role.</p>
+                          </div>
 
-                        <h3>Super Admin</h3>
-                        <p class="mb-0">superadmin@superadmin.com</p>
-                        <p class="mb-0">superadmin</p>
+                          <p>You can login using several methods depending on your role.</p>
 
-                        <h3 class="mt-3">Admin</h3>
-                        <p class="mb-0">admin@admin.com</p>
-                        <p class="mb-0">admin</p>
+                          <ul>
+                            <li>
+                              <h4>Super Admin</h4>
+                              <ul>
+                                <li>Username: <code>superadmin</code></li>
+                                <li>Password: <code>12345678</code></li>
+                              </ul>
+                            </li>
 
-                        <h3 class="mt-3">Manager</h3>
-                        <p class="mb-0">manager@manager.com</p>
-                        <p class="mb-0">manager</p>
+                            <li>
+                              <h4>Admin</h4>
+                              <ul>
+                                <li>Username: <code>admin</code></li>
+                                <li>Password: <code>12345678</code></li>
+                              </ul>
+                            </li>
 
-                        <!--Should be changed-->
-                        <a href="assets/img/login.png" target="_blank">
-                            <img src="assets/img/login.png" class="border">
-                        </a>
-                        <p class="mt-2">In this project, different modules are assigned based on user roles: Super Admin, Admin, Manager. Each role has distinct responsibilities tailored to their specific tasks and
-                            permissions. Below, we will discuss how each user role operates within the system.</p>
-                    </section>
+                            <li>
+                              <h4>Agent</h4>
+                              <ul>
+                                <li>Username: <code>agent</code></li>
+                                <li>Password: <code>12345678</code></li>
+                              </ul>
+                            </li>
+
+                            <li>
+                              <h4>Customer</h4>
+                              <ul>
+                                <li>Username: <code>customer</code></li>
+                                <li>Password: <code>12345678</code></li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <!-- Login image -->
+                          <a href="assets/img/login.png" target="_blank">
+                            <img src="assets/img/login.png" class="border" alt="Login Page Screenshot">
+                          </a>
+
+                          <p class="mt-2">
+                            In this project, different modules are assigned based on user roles: Super Admin, Admin, Manager. 
+                            Each role has distinct responsibilities tailored to their specific tasks and permissions. 
+                            Below, we will discuss how each user role operates within the system.
+                          </p>
+                        </section>
+
                 </div>
 
                 <section id="super-dashboard">
