@@ -750,43 +750,555 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                     <div class="page-header">
                         <h3 class="m-0">Knowledge Base</h3>
                     </div>
-                    <p class="m-0">Here, you can view a list of available plans with filtering options. You can also change the plan status from this page. Additionally, options to view, edit, delete, and multi-delete plans are available.</p>
-                    <a href="assets/img/kbt.png" target="_blank">
+
+                     <p>This section explains how to manage Knowledge Base (KB) categories in the system. Depending on your role (Content Editor, Support Agent, or Admin), the available actions may vary.</p>
+
+                   <h3>📚 Knowledge Base Category Management</h3>
+
+                  <h3>📖 View Categories</h3>
+                  <ul>
+                    <li>Navigate to the <strong>Knowledge Base</strong> section in the admin panel.</li>
+                    <li>Click on the <strong>Categories</strong> tab to see a list of all existing categories.</li>
+                    <li>Each category displays its name, description, number of articles, and visibility status.</li>
+                  </ul>
+
+                  <h3>➕ Create a New Category</h3>
+                  <ul>
+                    <li>Click the <strong>"Add Category"</strong> or <strong>"New Category"</strong> button.</li>
+                    <li>Enter a descriptive <strong>Name</strong> for the category (e.g., “Billing”, “Getting Started”).</li>
+                    <li>Optionally, provide a <strong>Description</strong> to guide users.</li>
+                    <li>Choose the <strong>Visibility</strong> level (Public, Internal, or Restricted).</li>
+                    <li>Click <strong>Save</strong> to publish the category.</li>
+                  </ul>
+
+                  <h3>✏️ Edit Category</h3>
+                  <ul>
+                    <li>Select the category you wish to update from the list.</li>
+                    <li>Click the <strong>Edit</strong> (✏️) button.</li>
+                    <li>Modify the name, description, visibility, or sort order as needed.</li>
+                    <li>Click <strong>Save Changes</strong>.</li>
+                  </ul>
+
+                  <h3>🗑️ Delete Category</h3>
+                  <ul>
+                    <li>Only Admins can delete categories.</li>
+                    <li>Navigate to the category and click the <strong>Delete</strong> (🗑️) icon.</li>
+                    <li>Confirm deletion when prompted.</li>
+                    <li>Articles in deleted categories will either be unassigned or archived, depending on system rules.</li>
+                  </ul>
+
+                  <h3>📂 Category Structure</h3>
+                  <ul>
+                    <li>Categories organize related articles for easy user navigation.</li>
+                    <li>Some systems support <strong>Subcategories</strong> for deeper structure (e.g., “Billing” → “Invoices”).</li>
+                    <li>Admins can drag-and-drop categories to reorder them in the UI.</li>
+                  </ul>
+
+                  <h3>🔍 Filter & Search</h3>
+                  <ul>
+                    <li>Use search filters to find categories by keyword, visibility, or number of articles.</li>
+                    <li>This helps large content teams quickly locate or manage categories.</li>
+                  </ul>
+
+                  <h3>👥 Role-Based Access</h3>
+                  <ul>
+                    <li><strong>Content Editors</strong> can create and edit categories, but may not delete them.</li>
+                    <li><strong>Support Agents</strong> can view and suggest edits but have limited category management rights.</li>
+                    <li><strong>Admins</strong> have full control over all category actions and visibility settings.</li>
+                  </ul>
+
+                  <h3>📊 Category Analytics</h3>
+                  <ul>
+                    <li>Some platforms include basic metrics like article count, views, and helpfulness per category.</li>
+                    <li>Admins can use this data to reorganize or improve content structure.</li>
+                  </ul>
+
+                  <h3>🧾 Notes</h3>
+                  <ul>
+                    <li>Categories improve user navigation and article discovery.</li>
+                    <li>Regular audits are recommended to merge duplicates or clean up unused categories.</li>
+                    <li>Use short, clear, and meaningful names for maximum impact.</li>
+                  </ul>
+                     href="assets/img/kbt.png" target="_blank">
                         <img src="assets/img/kbt.png" class="border">
                     </a>
-                    <h3>Create Plan</h3>
-                    <p class="m-0">Here, you have the option to create a plan according to your preferences. You can also add multiple features using the "Add New Feature" input field. Once you have completed filling out the form, simply click the "Save" button.</p>
-                    <a href="assets/img/create_plans.png" target="_blank">
-                        <img src="assets/img/create_plans.png" class="border">
+
+                    <hr/>
+                    <h3>📄 Knowledge Base Article Management </h3>
+                    
+                    <h3>📖 View Articles</h3>
+                  <ul>
+                    <li>Navigate to the <strong>Knowledge Base</strong> section in the admin dashboard.</li>
+                    <li>Select the <strong>Articles</strong> tab to view a list of all articles.</li>
+                    <li>Each entry includes <strong>Title</strong>, <strong>Category</strong>, <strong>Status</strong>, <strong>Author</strong>, and <strong>Last Updated</strong>.</li>
+                    <li>Use filters to view articles by category, author, status, or keyword.</li>
+                    <li>The article view page includes <strong>ratings (e.g., helpful/unhelpful)</strong> and <strong>comments</strong> from users to gather feedback.</li>
+                  </ul>
+
+                  <h3>➕ Create a New Article</h3>
+                  <ul>
+                    <li>Click the <strong>"New Article"</strong> or <strong>"Add Article"</strong> button.</li>
+                    <li>Enter a descriptive <strong>Title</strong> and choose a <strong>Category</strong>.</li>
+                    <li>Write your content using the rich text editor. You can include text, images, videos, links, and code blocks.</li>
+                    <li>Assign relevant <strong>Tags</strong> to improve searchability.</li>
+                    <li>Select the <strong>Status</strong> (Draft, Published, or Archived).</li>
+                    <li>Click <strong>Save</strong> or <strong>Publish</strong> to complete.</li>
+                  </ul>
+
+                  <h3>✏️ Edit Article</h3>
+                  <ul>
+                    <li>Locate the article from the list and click the <strong>Edit</strong> (✏️) icon.</li>
+                    <li>Update the title, body content, category, tags, or visibility as needed.</li>
+                    <li>Click <strong>Save Changes</strong> or <strong>Update</strong>.</li>
+                  </ul>
+
+                  <h3>🗑️ Delete Article</h3>
+                  <ul>
+                    <li>Admins or authorized editors can delete articles.</li>
+                    <li>Open the article and click the <strong>Delete</strong> (🗑️) button.</li>
+                    <li>Confirm deletion when prompted. Deleted articles may go to a trash/archive bin depending on system settings.</li>
+                  </ul>
+
+                  <h3>📂 Organize Articles by Category</h3>
+                  <ul>
+                    <li>Each article must belong to one category. Choose the most relevant category during creation.</li>
+                    <li>Admins can later move articles to a different category if needed.</li>
+                    <li>Articles within the same category are shown together in the user-facing knowledge base.</li>
+                  </ul>
+
+                  <h3>🔍 Search Optimization</h3>
+                  <ul>
+                    <li>Use clear titles that reflect common user questions.</li>
+                    <li>Assign meaningful tags and avoid duplicates.</li>
+                    <li>Include relevant keywords in both the title and content body to improve search indexing.</li>
+                  </ul>
+
+                  <h3>👥 Role-Based Access</h3>
+                  <ul>
+                    <li><strong>Content Editors</strong> can create, edit, and publish articles within assigned categories.</li>
+                    <li><strong>Support Agents</strong> can suggest edits and submit draft articles.</li>
+                    <li><strong>Admins</strong> have full access to create, edit, publish, archive, and delete articles.</li>
+                  </ul>
+
+                  <h3>📊 Article Analytics</h3>
+                  <ul>
+                    <li>Most platforms track views, likes/dislikes, and feedback per article.</li>
+                    <li>User comments and ratings help measure article helpfulness.</li>
+                    <li>Use analytics to identify top-performing content and areas needing improvement.</li>
+                  </ul>
+
+                  <h3>🧾 Notes</h3>
+                  <ul>
+                    <li>Keep articles clear, concise, and focused on solving a specific problem or explaining a feature.</li>
+                    <li>Use bullet points, headings, and formatting to improve readability.</li>
+                    <li>Review and update articles regularly to keep content accurate and helpful.</li>
+                  </ul>
+
+                    <a href="assets/img/knowledge-base.png" target="_blank">
+                        <img src="assets/img/knowledge-base.png" class="border">
                     </a>
+
+                    <hr/>
+
+                    <a href="assets/img/kbview.png" target="_blank">
+                        <img src="assets/img/kbview.png" class="border">
+                    </a>
+
                 </section>
 
                 <hr class="mt-4">
                 <section id="notifications">
                     <div class="page-header">
-                        <h3 class="m-0">Notifications</h3>
+                        <h3 class="m-0">📢 Notifications</h3>
                     </div>
-                    <p class="m-0">Here, you can view the list of staff members along with a search filter. Additionally, you have the option to edit, delete individual entries, and perform multi-delete operations.</p>
+                 
+                    <ul>
+                      <li>Users may receive email or in-app notifications when:
+                        <ul>
+                          <li>A new article is published in a category they follow.</li>
+                          <li>An article they authored or edited is approved or updated.</li>
+                          <li>Someone comments on an article they authored or follow.</li>
+                        </ul>
+                      </li>
+                    </ul>
+
                     <a href="assets/img/notifications.png" target="_blank">
                         <img src="assets/img/notifications.png" class="border">
                     </a>
-                    <h3>Create Staff</h3>
-                    <p class="m-0">You can create a staff member here by completing the necessary fields.</p>
-                    <a href="assets/img/create_staff.png" target="_blank">
-                        <img src="assets/img/create_staff.png" class="border">
-                    </a>
+                   
                 </section>
 
                 <hr class="mt-4">
                 <section id="super-report">
-                    <div class="page-header">
-                        <h3 class="m-0">Report</h3>
-                    </div>
-                    <p class="m-0">The Subscription reports section allows users to track their current subscriptions.In the action column, clicking on the three dots (...) will display options to mark as "Paid" or "Reject." Clicking either option will allow you to change the status accordingly.</p>
+                   
+                    <h3>📈 Reports</h3>
+                        <ul>
+                          <li>Admins and content managers can access detailed reports to track article performance over time.</li>
+                          <li>Common report types include:
+                            <ul>
+                              <li><strong>Views Report</strong> – shows total and unique views per article.</li>
+                              <li><strong>Feedback Report</strong> – aggregates helpful/unhelpful votes or satisfaction scores.</li>
+                              <li><strong>Engagement Report</strong> – includes comments, shares, and reading time metrics.</li>
+                              <li><strong>Author Activity Report</strong> – tracks article contributions and edits by user.</li>
+                              <li><strong>Category Performance Report</strong> – compares article activity across categories.</li>
+                            </ul>
+                          </li>
+                          <li>Reports help identify:
+                            <ul>
+                              <li>Top-performing and underperforming content.</li>
+                              <li>Articles that need updating or archiving.</li>
+                              <li>Content gaps based on search terms with no results.</li>
+                            </ul>
+                          </li>
+                          <li>Reports can usually be filtered by date range, category, author, or status.</li>
+                        </ul>
+
                     <a href="assets/img/report.png" target="_blank">
                         <img src="assets/img/report.png" class="border">
                     </a>
+
+                    <a href="assets/img/report2.png" target="_blank">
+                        <img src="assets/img/report2.png" class="border">
+                    </a>
+
                 </section>
+
+
+                <h2 id="cpanel-smtp-setup">📧 Mail Configuration / SMTP Setup – cPanel</h2>
+
+                <p>This guide explains how to create and configure an SMTP email account using <strong>cPanel</strong>.</p>
+
+                <h3>🛠️ Step 1: Log in to cPanel</h3>
+                <p>Access your hosting account and log into the cPanel dashboard.</p>
+
+                <h3>📨 Step 2: Create an Email Account</h3>
+                <ol>
+                  <li>Go to <strong>Email Accounts</strong> in cPanel.</li>
+                  <li>Click <strong>Create</strong>.</li>
+                  <li>Fill in the form:
+                    <ul>
+                      <li><strong>Username:</strong> e.g., <code>info</code>, <code>test</code>, or <code>hr</code></li>
+                      <li><strong>Domain:</strong> Select the appropriate domain (if multiple are available)</li>
+                      <li><strong>Password:</strong> Set a strong password or use the generator</li>
+                    </ul>
+                  </li>
+                  <li>Click <strong>Create</strong> to finish.</li>
+                </ol>
+
+                <p class="important">📌 This will create an email like <code>test@yourdomain.com</code></p>
+
+                <h3>⚙️ Step 3: Get SMTP Settings</h3>
+                <ol>
+                  <li>Go to <strong>Email Accounts</strong> again.</li>
+                  <li>Find your newly created email and click <strong>Connect Devices</strong>.</li>
+                  <li>Under <strong>Mail Client Manual Settings</strong>, you’ll find the SMTP details.</li>
+                </ol>
+
+                <a href="assets/img/smtp-cpanel.png" target="_blank">
+                  <img src="assets/img/smtp-cpanel.png" alt="SMTP Settings Screenshot" class="border">
+                </a>
+
+                <h3>📋 SMTP Configuration Example</h3>
+
+                <table style="width: 100%;" border="1" cellpadding="8" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Input</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>QUEUE_MAIL</td>
+                      <td>Select <code>true</code> or <code>false</code>. If <code>true</code>, run: <code>php artisan queue:work</code></td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_DRIVER_TYPE</td>
+                      <td>Select <code>MAIL MAILER</code> or <code>MAIL DRIVER</code></td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_DRIVER</td>
+                      <td>
+                        <b>sendmail</b>: Use if your server has a local mail server (e.g., Postfix or Exim).<br>
+                        <b>smtp</b>: Use for external mail services (e.g., Gmail, Mailgun, hosting SMTP).
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_HOST</td>
+                      <td><code>mail.yourdomain.com</code></td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_PORT</td>
+                      <td>587</td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_USERNAME</td>
+                      <td><code>test@yourdomain.com</code></td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_PASSWORD</td>
+                      <td>Your email password</td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_ENCRYPTION</td>
+                      <td><code>tls</code></td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_FROM_ADDRESS</td>
+                      <td><code>yourmail@gmail.com</code></td>
+                    </tr>
+                    <tr>
+                      <td>MAIL_FROM_NAME</td>
+                      <td>Your project or app name</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <br>
+
+                <p class="important">🛠️ Apply these values under <strong>System Settings → Mail Configuration</strong></p>
+
+                <h3>🔗 References</h3>
+                <ul>
+                  <li><a href="https://cpanel.net/blog/tips-and-tricks/setting-up-and-troubleshooting-smtp-in-cpanel/" target="_blank">Official cPanel SMTP Documentation</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=_pJt5zLxPtc&ab_channel=UddhabConsulting" target="_blank">YouTube Video Guide</a></li>
+                </ul>
+
+
+                    <hr>
+
+                    <h2 id="hpanel-smtp-setup">📧 Mail Configuration / SMTP Setup – Hostinger Panel</h2>
+
+                    <p>This guide explains how to create and configure an SMTP email account using <strong>Hostinger hPanel</strong>.</p>
+
+                    <h3>🛠️ Step 1: Log in to Hostinger hPanel</h3>
+                    <p>Access your Hostinger account at <a href="https://hpanel.hostinger.com" target="_blank">https://hpanel.hostinger.com</a></p>
+
+                    <h3>📨 Step 2: Create an Email Account</h3>
+                    <ol>
+                      <li>Go to <strong>Emails</strong> from the top menu.</li>
+                      <li>Select your domain name.</li>
+                      <li>Click <strong>"Create New Email Account"</strong>.</li>
+                      <li>Fill in the form:
+                        <ul>
+                          <li><strong>Email address:</strong> e.g., <code>info</code>, <code>test</code>, or <code>hr</code></li>
+                          <li><strong>Password:</strong> Set a secure password</li>
+                        </ul>
+                      </li>
+                      <li>Click <strong>Create</strong> to finish.</li>
+                    </ol>
+
+                    <p class="important">📌 This will create an email like <code>test@yourdomain.com</code></p>
+
+                    <h3>⚙️ Step 3: Get SMTP Settings</h3>
+                    <ol>
+                      <li>Return to the <strong>Email Accounts</strong> section.</li>
+                      <li>Find your newly created email and click <strong>“Connect App & Devices”</strong> or <strong>“Set Up Devices”</strong>.</li>
+                      <li>Look for the <strong>Manual Configuration</strong> or <strong>SMTP Settings</strong>.</li>
+                    </ol>
+
+                    <a href="assets/img/hpanel-smtp.png" target="_blank">
+                      <img src="assets/img/hpanel-smtp.png" alt="Hostinger SMTP Settings" class="border">
+                    </a>
+
+                    <h3>📋 SMTP Configuration Example</h3>
+
+                    <table style="width: 100%;" border="1" cellpadding="8" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>Input</th>
+                          <th>Value</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>QUEUE_MAIL</td>
+                          <td>
+                            Select <code>true</code> or <code>false</code>.<br>
+                            If <code>true</code>, run: <code>php artisan queue:work</code> on the server.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_DRIVER_TYPE</td>
+                          <td>Select <code>MAIL MAILER</code> or <code>MAIL DRIVER</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_DRIVER</td>
+                          <td>
+                            <b>sendmail</b>: Use if your server has a local mail server (e.g., Postfix or Exim).<br>
+                            <b>smtp</b>: Use for external services (e.g., Gmail, Mailgun, Hostinger SMTP).
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_HOST</td>
+                          <td><code>mail.yourdomain.com</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_PORT</td>
+                          <td>465</td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_USERNAME</td>
+                          <td><code>test@yourdomain.com</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_PASSWORD</td>
+                          <td>The one you set</td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_ENCRYPTION</td>
+                          <td><code>ssl</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_FROM_ADDRESS</td>
+                          <td><code>yourmail@gmail.com</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_FROM_NAME</td>
+                          <td>Your project/app name</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <br>
+
+                    <p class="important">🛠️ Apply these values under <strong>System Settings → Mail Configuration</strong></p>
+
+                    <a href="assets/img/hpanel-smtp-img.png" target="_blank">
+                      <img src="assets/img/hpanel-smtp-img.png" alt="System Mail Settings Example" class="border">
+                    </a>
+
+                    <h3>🔗 References</h3>
+                    <ul>
+                      <li><a href="https://support.hostinger.com/en/articles/1575756-how-to-get-email-account-configuration-details-for-hostinger-email" target="_blank">Official Hostinger Email Setup Guide</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=n-hCoeAe0ao&ab_channel=SendMails%7CEmailMarketing%26AutomationPlatform" target="_blank">YouTube Video Tutorial</a></li>
+                    </ul>
+
+                    <h3>⚠️ Queue Mail Execution Notes</h3>
+                    <ul>
+                      <li><b>If you enable <code>QUEUE_MAIL = true</code></b>, you must run the queue command:</li>
+                      <li><code>php artisan queue:work</code></li>
+                      <li>Make sure the command is run from your project root. For example:
+                        <br><code>/home/u186958312/domains/yourdomain.com/public_html</code>
+                      </li>
+                      <li><b>Alternative:</b> If you can’t run the CLI command manually, open this URL in a browser to trigger it:
+                        <br><code>yourdomain.com/queue-work</code>
+                      </li>
+                      <li><strong>Important:</strong> If <code>QUEUE_MAIL</code> is set to <code>true</code> but the command isn't executed, your email system will not function properly.</li>
+                    </ul>
+
+
+                    <hr>
+
+                   <h2 id="gmail-smtp-setup">📧 Mail Configuration / SMTP Setup – Gmail</h2>
+
+                    <p>This guide explains how to configure SMTP for sending emails via a Gmail account. It involves enabling 2-Step Verification and generating an App Password.</p>
+
+                    <h3>🔐 Step 1: Enable 2-Step Verification</h3>
+                    <ol>
+                      <li>Visit <a href="https://myaccount.google.com" target="_blank">https://myaccount.google.com</a></li>
+                      <li>Click <strong>Security</strong> from the left-hand menu.</li>
+                      <li>Under <strong>Signing in to Google</strong>, enable <strong>2-Step Verification</strong>.</li>
+                    </ol>
+
+                    <a href="assets/img/gmail_security.png" target="_blank">
+                      <img src="assets/img/gmail_security.png" alt="Enable 2FA in Gmail" class="border">
+                    </a>
+
+                    <p>Follow the prompts to complete setup using your phone or other options.</p>
+
+                    <h3>🔑 Step 2: Generate an App Password</h3>
+                    <ol>
+                      <li>After enabling 2-Step Verification, go to <a href="https://myaccount.google.com/apppasswords" target="_blank">https://myaccount.google.com/apppasswords</a></li>
+                      <li>Sign in if prompted.</li>
+                      <li>Under <strong>Select the app</strong>, choose <strong>Other (Custom name)</strong>.</li>
+                      <li>Enter a name like <code>SMTP App</code> and click <strong>Generate</strong>.</li>
+                    </ol>
+
+                    <a href="assets/img/app_password.png" target="_blank">
+                      <img src="assets/img/app_password.png" alt="App Password Page" class="border">
+                    </a>
+
+                    <p>Google will show you a 16-character app password. Copy this — it will be your SMTP password.</p>
+
+                    <a href="assets/img/generate_password.png" target="_blank">
+                      <img src="assets/img/generate_password.png" alt="Generated App Password" class="border">
+                    </a>
+
+                    <h3>📋 SMTP Configuration Example</h3>
+
+                    <table style="width: 100%;" border="1" cellpadding="8" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>Input</th>
+                          <th>Value</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>QUEUE_MAIL</td>
+                          <td>
+                            Select <code>true</code> or <code>false</code>. If <code>true</code>, run: 
+                            <code>php artisan queue:work</code> on the server.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_DRIVER_TYPE</td>
+                          <td>Select <code>MAIL MAILER</code> or <code>MAIL DRIVER</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_DRIVER</td>
+                          <td><code>smtp</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_HOST</td>
+                          <td><code>smtp.gmail.com</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_PORT</td>
+                          <td>587</td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_USERNAME</td>
+                          <td><code>your_email@gmail.com</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_PASSWORD</td>
+                          <td><code>your_app_password</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_ENCRYPTION</td>
+                          <td><code>tls</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_FROM_ADDRESS</td>
+                          <td><code>your_email@gmail.com</code></td>
+                        </tr>
+                        <tr>
+                          <td>MAIL_FROM_NAME</td>
+                          <td>Your project/app name</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <br>
+
+                    <p class="important">🛠️ Apply these values under <strong>System Settings → Mail Configuration</strong></p>
+
+                    <a href="assets/img/gmail_smtp.png" target="_blank">
+                      <img src="assets/img/gmail_smtp.png" alt="Gmail SMTP Example" class="border">
+                    </a>
+
+                    <h3>🔗 References</h3>
+                    <ul>
+                      <li><a href="https://laravel.com/docs/11.x/mail" target="_blank">Official Laravel Mail Documentation</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=ZfEK3WP73eY&ab_channel=GuideRealm" target="_blank">YouTube Setup Tutorial</a></li>
+                    </ul>
+
+
+
+
+                
 
                 <hr class="mt-5">
 
@@ -802,6 +1314,47 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                 </div>
                 
                 <hr class="mt-5">
+
+
+                <div class="tool-setup-section" id="help-support">
+                  <h2 style="margin-top: 40px;">📩 Help & Support</h2>
+
+                  <div class="theme-requirements mb-3">
+                    <p>
+                      Our free support covers <strong>troubleshooting</strong> and <strong>technical assistance</strong> related to the product itself. 
+                      It does <em>not</em> include:
+                    </p>
+                    <ul>
+                      <li>Custom development or modifications</li>
+                      <li>Integration of additional features</li>
+                      <li>Issues related to third-party plugin compatibility</li>
+                    </ul>
+
+                    <p>
+                      Support is applicable only to plugin(s) that we have <strong>developed and integrated</strong> ourselves. 
+                      We appreciate your understanding!
+                    </p>
+
+                    <p>
+                      If you need help or have questions that are not covered in the documentation, feel free to reach out to our support team at:
+                    </p>
+
+                    <p class="important">
+                      <a href="mailto:tshelpdesk7@gmail.com">tshelpdesk7@gmail.com</a>
+                    </p>
+
+                    <p>
+                      You can expect a response within <strong>24–48 hours</strong>, usually sooner, based on the order requests are received.
+                    </p>
+
+                    <p>
+                      Please note: If an email remains unanswered for more than <strong>7 days</strong>, it may be archived by default.
+                      You are always welcome to follow up by sending another email if needed.
+                    </p>
+                  </div>
+                </div>
+
+
         </div>
         <!--/right-->
     </div>
