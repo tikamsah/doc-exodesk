@@ -186,7 +186,6 @@
                         <a href="assets/img/download.png" target="_blank">
                             <img src="assets/img/download.png" class="border">
                         </a>
-
                         <p>
                             Extract the downloaded file. Inside, you will find another zip file named <em>ExoDesk.zip</em>, which contains the main project files, along with a <strong>documentation</strong> folder. Since you're reading this documentation, it means you already have both files.
                         </p>
@@ -196,8 +195,7 @@
                         <div class="page-header"><h3>Creating Database</h3></div>
                         <p>Before installing, you will need to create a new database. If you already know how to do this
                             or have already created one, skip to the next step.</p>
-                        <p class="important"><b>Note: </b> Please use empty database. In most cases you should be able
-                            to create a database from your cpanel.</p>
+                        <p class="important"><b>Note: </b> Please use an empty database. In most cases, you can create a new database directly from your cPanel.</p>
 
                         <p>Login to your Hostings Panel or cPanel by entering this in your browser url</p>
                         <p class="important">domian.com/cpanel</p>
@@ -234,9 +232,10 @@
                             starting to upload the files, please make sure your file explorer has the option to view
                             hidden files turned on.</p>
 
-                        <p>After creating a database, Upload the <b>Super-Admin.zip</b> file on the web root folder of
-                            your domain. This folder is generally called public_html, html, or example.com, but
-                            depending on your server's configuration, it might be named differently.</p>
+                        <p> After creating the database, upload the <em>ExoDesk.zip</em> file to the web root folder of your domain.
+                            This folder is usually named public_html, html, or matches your domain name (e.g., example.com).
+                            However, the exact name may vary depending on your hosting provider or server configuration.
+                        </p>
 
                         <a href="assets/img/file-manager.png" target="_blank">
                             <img src="assets/img/file-manager.png" alt="" class="border">
@@ -272,8 +271,7 @@
                             <h3>Installation Steps</h3>
                         </div>
                         <div>
-                            <p>Go to your website address, then you'll see an installation wizard. To open the
-                                installer. Visit</p>
+                            <p>Go to the .env file located in the root directory of your project, and update the following details:</p>
                         </div>
 
                       
@@ -509,9 +507,9 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                           </a>
 
                           <p class="mt-2">
-                            In this project, different modules are assigned based on user roles: Super Admin, Admin, Manager. 
-                            Each role has distinct responsibilities tailored to their specific tasks and permissions. 
-                            Below, we will discuss how each user role operates within the system.
+                            In this project, various modules are assigned based on user roles: Super Admin, Admin, Agent, and Customer.
+                            Each role is designed with specific responsibilities and permissions tailored to its function within the system.
+                            Below, we’ll outline how each user role operates and interacts with the application’s features.
                           </p>
                         </section>
 
@@ -532,7 +530,70 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                     <div class="page-header">
                         <h3 class="m-0">Roles & Permissions</h3>
                     </div>
-                    <p class="m-0">This list allows you to see the current advertising campaigns with status. To create a new advertise, you can click on the "Create Banner" button at the top right of the screenshot. A pop-up window will open, where you can add an image and change the status.</p>
+
+                     <p>
+                        In this system, <strong>Roles &amp; Permissions</strong> define how users interact with various modules and features.
+                        Each role is assigned a specific set of permissions that align with their responsibilities, ensuring secure and organized access control across the application.
+                        </p>
+
+                        <h3>🎯 Why Roles &amp; Permissions Matter</h3>
+                        <ul>
+                        <li>✅ Ensure users only access features relevant to their duties</li>
+                        <li>✅ Prevent unauthorized actions and protect sensitive data</li>
+                        <li>✅ Improve usability by simplifying interfaces for different roles</li>
+                        <li>✅ Allow scalable, role-based management for large teams</li>
+                        </ul>
+
+                        <h3>👥 User Roles Overview</h3>
+
+                        <h4>🔸 Super Admin</h4>
+                        <ul>
+                        <li>Full access to all modules and system settings</li>
+                        <li>Can create, update, and delete users, roles, and configurations</li>
+                        <li>Manages overall system operations and global permissions</li>
+                        </ul>
+
+                        <h4>🔸 Admin</h4>
+                        <ul>
+                        <li>Access to most management features except high-level system settings</li>
+                        <li>Manages teams, modules, data, and day-to-day operations</li>
+                        <li>Can assign roles to users under their scope</li>
+                        </ul>
+
+                        <h4>🔸 Agent</h4>
+                        <ul>
+                        <li>Works on assigned tasks or tickets</li>
+                        <li>Has limited access based on assignments and scope</li>
+                        <li>Can communicate with customers or other team members</li>
+                        </ul>
+
+                        <h4>🔸 Customer</h4>
+                        <ul>
+                        <li>End-users of the platform</li>
+                        <li>Can submit tickets, view responses, and manage their own profiles</li>
+                        <li>Has access to only relevant customer-facing features</li>
+                        </ul>
+
+                        <h3>🔧 Permission System</h3>
+                        <p>
+                        Each permission controls access to a specific action or feature, such as:
+                        </p>
+                        <ul>
+                        <li><code>view_dashboard</code></li>
+                        <li><code>create_ticket</code></li>
+                        <li><code>manage_users</code></li>
+                        <li><code>edit_settings</code></li>
+                        </ul>
+
+                        <p>
+                        Permissions are grouped and assigned to roles. This structure allows for:
+                        </p>
+                        <ul>
+                        <li>Easy updates when responsibilities change</li>
+                        <li>Custom role creation for specialized access needs</li>
+                        <li>Full audit control over who can do what within the system</li>
+                        </ul>
+
                     <a href="assets/img/roles.png" target="_blank">
                         <img src="assets/img/roles.png" class="border">
                     </a>
@@ -541,18 +602,51 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                 <hr class="mt-4">
                 <section id="super-business">
                     <h3>Users List</h3>
-                    <p class="m-0">This appears to be a screenshot of a business list page. Business list functionalities typically allow users to collect and organize information about businesses. By clicking the "View" button, you can see the details of each business. You can also create a new business by clicking the "Add New Business" button. Below, we'll describe how you can create a new business.</p>
-                    <a href="assets/img/installer.png" target="_blank">
-                        <img src="assets/img/installer.png" class="border">
-                    </a>
-                    <h3>Upgrade Plan</h3>
-                    <p class="m-0">If you need to upgrade the plan for any business, click on the "Upgrade Plan" button. You will likely see a popup for this. Here, you can update the plan, gateway, price, and notes. When you select a plan, the price input field will automatically fill in according to the selected plan, but you can also change the price manually. If desired, you can add a note by filling in the notes input field.</p>
-                    <a href="assets/img/installer.png" target="_blank">
-                        <img src="assets/img/installer.png" class="border">
-                    </a>
+                   <p>This section explains how to manage users within the system using Create, Read, Update, and Delete (CRUD) functions.</p>
 
-                    <h3>Create Business</h3>
-                    <p class="m-0">By clicking on the "Add New Business" button, you can create a new business. You will need to fill in the necessary fields. Here is the screenshot of the create business page.</p>
+                  <h3>➕ Create New User</h3>
+                  <ul>
+                    <li>Go to the <strong>Users</strong> section from the sidebar menu.</li>
+                    <li>Click on the <strong>"Add New User"</strong> or <strong>"Create"</strong> button.</li>
+                    <li>Fill in the required fields such as name, email, role, and password.</li>
+                    <li>Click <strong>"Save"</strong> to create the user.</li>
+                  </ul>
+
+                  <h3>👁️ View Users (Read)</h3>
+                  <ul>
+                    <li>Navigate to the <strong>Users</strong> menu.</li>
+                    <li>All registered users will be listed in a table view.</li>
+                    <li>You can see details like name, email, role, status, and creation date.</li>
+                  </ul>
+
+                  <h3>✏️ Update User</h3>
+                  <ul>
+                    <li>In the user list, click the <strong>"Edit"</strong> icon/button next to the user you want to update.</li>
+                    <li>Modify the necessary fields (e.g., name, email, role).</li>
+                    <li>Click <strong>"Update"</strong> to save the changes.</li>
+                  </ul>
+
+                  <h3>🗑️ Delete User</h3>
+                  <ul>
+                    <li>Find the user in the list you want to remove.</li>
+                    <li>Click the <strong>"Delete"</strong> icon/button.</li>
+                    <li>Confirm the deletion when prompted.</li>
+                    <li><strong>Warning:</strong> Deleting a user is permanent and cannot be undone.</li>
+                  </ul>
+
+                  <h3>🔐 Assigning Roles</h3>
+                  <ul>
+                    <li>During user creation or editing, select a role from the dropdown (e.g., Admin, Agent, Customer).</li>
+                    <li>Roles define what permissions and access each user has within the system.</li>
+                  </ul>
+
+                  <h3>✅ Best Practices</h3>
+                  <ul>
+                    <li>Ensure each user has a unique email and secure password.</li>
+                    <li>Assign roles carefully to avoid unauthorized access.</li>
+                    <li>Regularly review and update user access as needed.</li>
+                  </ul>
+                  
                     <a href="assets/img/users.png" target="_blank">
                         <img src="assets/img/users.png" class="border">
                     </a>
@@ -563,10 +657,92 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
                     <div class="page-header">
                         <h3 class="m-0">Manage Tickets</h3>
                     </div>
-                    <p class="m-0">This appears to be a screenshot of a business categories list. Here, you can filter business categories, as well as edit, delete, or multi-delete them. There is also an "Add New" button for adding new business categories. To add a new business category, fill in the necessary fields. You need to enter the business name, and the description field is optional. You can also update the status from this page.</p>
+                    
+                     <p>This section explains how to manage support tickets within the system. Depending on your role (Customer, Agent, or Admin), the available actions may vary.</p>
+
+                          <h3>📥 View Tickets</h3>
+                          <ul>
+                            <li>Navigate to the <strong>Tickets</strong> menu from the sidebar.</li>
+                            <li>Tickets are listed in a table with columns such as <strong>Subject</strong>, <strong>Status</strong>, <strong>Priority</strong>, <strong>Assigned Agent</strong>, and <strong>Created Date</strong>.</li>
+                            <li>Use filters to sort by department, category, status, or assigned agent.</li>
+                          </ul>
+
+                          <h3>➕ Create a Ticket (Customer)</h3>
+                          <ul>
+                            <li>Click <strong>"New Ticket"</strong>.</li>
+                            <li>Select a relevant <strong>Department</strong> and <strong>Category</strong>.</li>
+                            <li>Enter the subject and description of the issue.</li>
+                            <li>Attach files if needed, then click <strong>Submit</strong>.</li>
+                          </ul>
+
+                          <h3>📂 Departments & Categories</h3>
+                          <ul>
+                            <li>Departments help route tickets to the right team (e.g., Sales, Technical Support).</li>
+                            <li>Categories define the type of issue (e.g., Login Problem, Payment Issue).</li>
+                            <li>Admins can create and manage departments/categories in system settings.</li>
+                          </ul>
+
+                          <h3>📤 Show & Reply to Ticket</h3>
+                          <ul>
+                            <li>Click on a ticket to open its detailed view.</li>
+                            <li>Agents/Admins can view the full conversation and add replies.</li>
+                            <li>Use the <strong>Reply</strong> field to respond or request more info from the customer.</li>
+                            <li>Replies can include text, images, or file attachments.</li>
+                          </ul>
+
+                          <h3>👤 Assign Tickets</h3>
+                          <ul>
+                            <li>Admins can assign tickets to specific agents or leave them unassigned.</li>
+                            <li>Use the dropdown menu in the ticket view to select an available agent.</li>
+                            <li>Assigned agents will be notified and will see the ticket in their queue.</li>
+                          </ul>
+
+                          <h3>⚠️ Escalate Tickets</h3>
+                          <ul>
+                            <li>Admins or agents can escalate tickets if additional attention or a higher authority is required.</li>
+                            <li>Escalated tickets are flagged and optionally reassigned to a supervisor or admin.</li>
+                            <li>Escalation status is visible in the ticket timeline/history.</li>
+                          </ul>
+
+                          <h3>✏️ Update Ticket (Status, Priority, Notes)</h3>
+                          <ul>
+                            <li>Agents/Admins can change ticket status (e.g., Open, In Progress, Closed).</li>
+                            <li>Priority levels (Low, Medium, High, Critical) can be set based on issue urgency.</li>
+                            <li>Internal notes can be added without notifying the customer.</li>
+                          </ul>
+
+                          <h3>✅ Close Ticket</h3>
+                          <ul>
+                            <li>Once resolved, change the ticket status to <strong>Closed</strong>.</li>
+                            <li>Closed tickets are archived but can still be viewed in read-only mode.</li>
+                          </ul>
+
+                          <h3>📊 Ticket History</h3>
+                          <ul>
+                            <li>Every ticket contains a full audit log of actions: replies, status changes, assignments, and escalations.</li>
+                            <li>Admins and agents can use this log to track the timeline of resolution.</li>
+                          </ul>
+
+                          <h3>🧾 Notes</h3>
+                          <ul>
+                            <li>Customers can only view and reply to their own tickets.</li>
+                            <li>Agents manage tickets assigned to them and can escalate or request help.</li>
+                            <li>Admins have full control over all tickets, users, departments, and escalations.</li>
+                          </ul>
+
                     <a href="assets/img/ticket-d.png" target="_blank">
                         <img src="assets/img/ticket-d.png" class="border">
                     </a>
+
+                     <a href="assets/img/ticket.png" target="_blank">
+                        <img src="assets/img/ticket.png" class="border">
+                    </a>
+
+                    <a href="assets/img/ticket-show.png" target="_blank">
+                        <img src="assets/img/ticket-show.png" class="border">
+                    </a>
+
+                    
                 </section>
 
                 <hr class="mt-4">
